@@ -10,14 +10,14 @@ body {
 }
 
 .quiz-section {
-    background-color: #ffffff;
+    background-color: #dca8a8;
     border-radius: 20px;
     padding: 10px;
     color: #000000;
     margin: auto;
     width: 880px;
     height: 400px;
-    margin-top: 180px;
+    margin-top: 300px;
     margin-bottom: 180px;
 
 }
