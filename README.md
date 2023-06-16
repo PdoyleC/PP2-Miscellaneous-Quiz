@@ -1,39 +1,67 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+  
+  
+  
+  ## Contents
+	### Site Overview
+	### Project Goals
+	### For the user
+	### For the club owner
+	### Site Owner Goals
+	### How This Will Be Achieved
+	### User Feedback
+    [Back to contents](#contents)
+## UX
+	## Strategy and Scope
+	### Target Audience
+	### User Stories
+	### User Requirements
+    [Back to contents](#contents)
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
+	### Navigation Bar
+	### Logo
+	### Hero Image
+	### Class Timetable
+	### Footer
+	### Puzzle Page
+	### Contact Page
+    [Back to contents](#contents)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+## Design
+	### Color Scheme
+	### Color Contrast
+	### Fonts
+    [Back to contents](#contents)
 
-## Codeanywhere Reminders
+## Future Adaptations
+	### Future changes
+    [Back to contents](#contents)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Structure and Skeleton
+	### [Wireframes
+	### Home Page
+	### Puzzle Page
+	### Contact Page
+    [Back to contents](#contents)
 
-`python3 -m http.server`
+## Testing and Validation
+	### Code Validation
+	### Lighthouse
+	### WAVE
+	### Site Validation
+	### Inspect
+	### 404 ERROR
+    [Back to contents](#contents)
+## Bugs \& ERRORS
+## Unresolved Bugs
+## Deployment and Development
+## Technologies Used
+[Back to contents](#contents)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Credits
+	### Content
+	### Code
+	### Media
+	### Acknowledgments
+    [Back to contents](#contents)
