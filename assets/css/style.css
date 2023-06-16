@@ -8,3 +8,16 @@ body {
     background-repeat: no-repeat;
     background-color: #a8acd1;
 }
+
+.quiz-section {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000000;
+    margin: auto;
+    width: 880px;
+    height: 400px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+
+}

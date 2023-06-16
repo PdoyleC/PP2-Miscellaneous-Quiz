@@ -44,8 +44,8 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ### Background Image
 
-- The image is by Rachel Claire and is from pexels httpswww.pexels.comphotomerchandise-in-store-5865390
-  ![Background Image](inamge/misc.jpg)
+- The image is by Rachel Claire and is from [Pexels.com](httpswww.pexels.comphotomerchandise-in-store-5865390)
+  ![Background Image](documentation/misc1.jpg)
 
 ### Class Timetable
 
