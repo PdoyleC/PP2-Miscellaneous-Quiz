@@ -1,0 +1,10 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/misc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2330a5;
+}
