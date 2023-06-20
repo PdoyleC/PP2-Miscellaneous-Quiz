@@ -14,7 +14,7 @@ body {
 }
 
 .quiz-section {
-    background-color: #e4cdcd;
+    background-color: rgba(228, 205, 205, 0.8);
     border-radius: 20px;
     padding: 10px;
     color: #000000;
@@ -30,7 +30,7 @@ body {
     border-radius: 20px;
     margin-top: 100px;
     font-style: oblique;
-    color: red;
+    color: black;
     background-color: #e4cdcd;
     border-radius: 20px;
     padding: 1px;
@@ -42,6 +42,7 @@ body {
     text-align: center;
 }
 
+/*Score section*/
 #correct {
   color: green;
   font-weight: bold;
@@ -50,4 +51,15 @@ body {
 #incorrect {
   color: red;
   font-weight: bold;
+}
+
+.result-section {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.result {
+  display: inline-block;
+  padding: 20px;
 }
