@@ -54,21 +54,21 @@ const questions = [
     ];
 },
 {
-    question: "Which of these feature on a cricket pitch",
+    question: "What country drinks the most coffee?",  done
         answers: [
-            { text: "Fold", correct: false },
-            { text: "Crimp", correct: false },
-            { text: "Pleat", correct: false },
-            { text: "Crease", correct: true }
+            { text: "France", correct: false },
+            { text: "Finland", correct: true },
+            { text: "Italy", correct: false },
+            { text: "Denmark", correct: false }
         ];
 },
 {
-    question: "Which ancient civilisation was ruled by the Pharaohs",
+    question: "Where did sushi originate?",  done
         answers: [
-            { text: "Roman", correct: false },
-            { text: "Japanese", correct: false },
-            { text: "Carthaginian", correct: false },
-            { text: "Egyptian", correct: true }
+            { text: "Korea", correct: false },
+            { text: "New Zealand", correct: false },
+            { text: "Japan", correct: false },
+            { text: "China", correct: true }
         ];
 },
 {
@@ -90,16 +90,16 @@ const questions = [
     ];
 },
 {
-    question: "Which rock and roll performer was often referred to as 'The King'",
+    question: "Which of the following sauces is NOT traditionally vegan", done
         answers: [
-            { text: "Jerry Lee Lewis", correct: false },
-            { text: "Buddy Holly", correct: false },
-            { text: "Richie Valens", correct: false },
-            { text: "Elvis Presley", correct: true }
+            { text: "Hoisin", correct: false },
+            { text: "Wasabi", correct: false },
+            { text: "Mustard", correct: false },
+            { text: "Worcestershire", correct: true }
         ];
 },
 {
-    question: "The world’s fastest ___________ travels at 47 mph.",
+    question: "The world’s fastest ___________ travels at 47 mph.",  done
         answers: [
             { text: "Big cat", correct: false },
             { text: "Golf cart", correct: false },
@@ -108,12 +108,12 @@ const questions = [
         ];
 },
 {
-    question: "Which work by Shakespeare is set in Scotland",
+    question: "How many elements are in the periodic table?",  done
         answers: [
-            { text: "Othello", correct: false },
-            { text: "Macbeth", correct: true },
-            { text: "Hamlet", correct: false },
-            { text: "The Tempest", correct: false }
+            { text: "98", correct: false },
+            { text: "106", correct: false },
+            { text: "112", correct: false },
+            { text: "118", correct: true }
         ];
 },
 {
