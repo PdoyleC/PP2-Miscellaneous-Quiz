@@ -16,7 +16,7 @@ body {
 .quiz-section {
     background-color: rgba(228, 205, 205, 0.8);
     border-radius: 20px;
-    padding: 10px;
+    padding: 1%;
     color: #000000;
     margin: auto;
     width: 880px;
@@ -41,6 +41,52 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+
+#questions-asked {
+  width: 90%;
+  font-size: 1.8rem;
+  margin: auto;
+  margin-top: 20px;
+  padding: 30px 0;
+  background-color: white;
+  border-radius: 8px;
+}
+
+
+
+#answer-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  margin: 5px;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding: 10px;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #c5b1e6;
+}
+
+.choice.correct {
+  background-color: green;
+}
+
+.choice.wrong {
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}
+
 
 /*Score section*/
 #correct {
