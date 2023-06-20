@@ -41,3 +41,13 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+
+#correct {
+  color: green;
+  font-weight: bold;
+}
+
+#incorrect {
+  color: red;
+  font-weight: bold;
+}
