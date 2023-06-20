@@ -117,12 +117,12 @@ const questions = [
         ];
 },
 {
-    question: "Which English king was married six times",
+    question: "Who was the Ancient Greek God of the Sun?", done
         answers: [
-            { text: "Richard III", correct: false },
-            { text: "Henry VIII", correct: true },
-            { text: "Edward VI", correct: false },
-            { text: "George III", correct: false }
+            { text: "Apollo", correct: true },
+            { text: "Aries", correct: false },
+            { text: "Hades", correct: false },
+            { text: "Hera", correct: false }
         ];
 },
 {
@@ -135,39 +135,39 @@ const questions = [
     ];
 },
 {
-    question: "What is the name of the white target ball in the ame of bowls",
+    question: "How many breeds of elephant are there?", done
         answers: [
-            { text: "John", correct: false },
-            { text: "Jamie", correct: false },
-            { text: "Jack", correct: true },
-            { text: "Jim", correct: false },
+            { text: "3", correct: true },
+            { text: "4", correct: false },
+            { text: "5", correct: false },
+            { text: "6", correct: false },
         ];
 },
 {
-    question: "An ingot is an oblong block of what",
+    question: "How many letter tiles are there in a game of Scrabble?", done
         answers: [
-            { text: "Cheese", correct: false },
-            { text: "Wood", correct: false },
-            { text: "Metal", correct: true },
-            { text: "Lard", correct: false }
+            { text: "97", correct: false },
+            { text: "100", correct: true },
+            { text: "108", correct: false },
+            { text: "120", correct: false }
         ];
 },
 {
-    question: "Which of these scientists had the first name Isaac",
+    question: "What year was Marmite invented?", done
         answers: [
-            { text: "Einstein", correct: false },
-            { text: "Newton", correct: true },
-            { text: "Faraday", correct: false },
-            { text: "Pascal", correct: false }
+            { text: "1929 ", correct: false },
+            { text: "1902 ", correct: true },
+            { text: "1899", correct: false },
+            { text: "1910", correct: false }
         ];
 },
 {
-    question: "The United States Of America has a border with which of these countries",
+    question: "Which playground game used to be an Olympic sport up until 1920?", done
         answers: [
-            { text: "Brazil", correct: false },
-            { text: "Ecuador", correct: false },
-            { text: "Mexico", correct: true },
-            { text: "Chile", correct: false }
+            { text: "Long Rope Skipping", correct: false },
+            { text: "Hop Scotch", correct: false },
+            { text: "Tug of war", correct: true },
+            { text: "Tag", correct: false }
         ];
 },
 {
@@ -180,30 +180,30 @@ const questions = [
     ];
 },
 {
-    question: "What is the capital of Northern Ireland",
+    question: "Name the hospital where the first human to human heart transplant took place", done
         answers: [
-            { text: "Derry", correct: false },
-            { text: "Belfast", correct: true },
-            { text: "Cork", correct: false },
-            { text: "Dublin", correct: false }
+            { text: "Cleveland Clinic", correct: false },
+            { text: "Massachusetts General Hospital", correct: false },
+            { text: "Mayo Clinic ‑ Rochester", correct: false },
+            { text: "Groote Schuur Hospital", correct: true }
         ];
 },
 {
-    question: "What is a bream",
+    question: "Which U.S. President had the middle name Milhous?", done
         answers: [
-            { text: "Wild mushroom", correct: false },
-            { text: "Paper quantity", correct: false },
-            { text: "Freshwater fish", correct: true },
-            { text: "Musical instrument", correct: false },
+            { text: "Thomas Jefferson", correct: false },
+            { text: "Richard Nixon", correct: true },
+            { text: "Zachary Taylor", correct: false },
+            { text: "William Henry Harrison", correct: false },
         ];
 },
 {
-    question: "In which country did the budgerigar originate",
+    question: "when did ireland join the EU", done
         answers: [
-            { text: "Australia", correct: true },
-            { text: "Belgium", correct: false },
-            { text: "Chad", correct: false },
-            { text: "Denmark", correct: false }
+            { text: "1971", correct: false },
+            { text: "1973", correct: true },
+            { text: "1975", correct: false },
+            { text: "1977", correct: false }
         ];
 },
 {
@@ -225,39 +225,39 @@ const questions = [
     ];
 },
 {
-    question: "The island of Sardinia is part of which European country",
+    question: "The city of Cork is built on which river?", done
         answers: [
-            { text: "Greece", correct: false },
-            { text: "France", correct: false },
-            { text: "Spain", correct: false },
-            { text: "Italy", correct: true }
+            { text: "Bride", correct: false },
+            { text: "Feale", correct: false },
+            { text: "Bandon", correct: false },
+            { text: "Lee", correct: true }
         ];
 },
 {
-    question: "Nostradamus was famous for making what",
+    question: "What is the longest river in Ireland?", done
         answers: [
-            { text: "Cakes", correct: false },
-            { text: "Predictions", correct: true },
-            { text: "Friends", correct: false },
-            { text: "Jokes", correct: false }
+            { text: "River Liffey", correct: false },
+            { text: "River Shannon", correct: true },
+            { text: "River Lee", correct: false },
+            { text: "River Erne", correct: false }
         ];
 },
 {
-    question: "What is the name for the part of the bone that fits into a socket to form hip and shoulder joints",
+    question: "The Blarney Stone is a block of what type of rock?", done
         answers: [
-            { text: "Ball", correct: true },
-            { text: "Plug", correct: false },
-            { text: "Knuckle", correct: false },
-            { text: "Pivot", correct: false }
+            { text: "Granite", correct: false },
+            { text: "Limestone", correct: true },
+            { text: "Sandstone", correct: false },
+            { text: "Basalt", correct: false }
         ];
 },
 {
-    question: "What is the colour of the maple leaf on the Canadian national flag",
+    question: "Name the highest peak in Ireland?", done
         answers: [
-            { text: "Green", correct: false },
-            { text: "White", correct: false },
-            { text: "Red", correct: true },
-            { text: "Gold", correct: false }
+            { text: "Beenkeragh", correct: false },
+            { text: "Caher", correct: false },
+            { text: "Carrauntoohil", correct: true },
+            { text: "Knocknapeasta", correct: false }
         ];
 },
 {
@@ -270,21 +270,21 @@ const questions = [
         ];
 },
 {
-    question: "Which of these is an extra in cricket",
+    question: "What's the name of the Spandau Ballet lead singer?", done
         answers: [
-            { text: "Wide", correct: true },
-            { text: "Broad", correct: false },
-            { text: "Large", correct: false },
-            { text: "Vast", correct: false }
+            { text: "Tony Hadley", correct: true },
+            { text: "Tony Handly", correct: false },
+            { text: "Tony Hardy", correct: false },
+            { text: "Tony Manley", correct: false }
         ];
 },
 {
-    question: "Which word describes two lines which are always the same distance apart",
+    question: "Which song was voted “Ireland’s Favourite Folk Song” by RTÉ in 2019?", done
         answers: [
-            { text: "Equilateral", correct: false },
-            { text: "Parallel", correct: true },
-            { text: "Quadratic", correct: false },
-            { text: "Tangential", correct: false }
+            { text: "The Hot Asphalt", correct: false },
+            { text: "Rocky Road to Dublin", correct: false },
+            { text: "The Galway Shawl", correct: false },
+            { text: "Raglan Road", correct: true }
         ];
 },
 {
@@ -297,21 +297,21 @@ const questions = [
     ];
 },
 {
-    question: "What shape is the head of an Allen key",
+    question: "Irish singer-songwriter, Enya, was born in what county?", done
         answers: [
-            { text: "Triangular", correct: false },
-            { text: "Square", correct: false },
-            { text: "Pentagonal", correct: false },
-            { text: "Hexagonal", correct: true }
+            { text: "Dublin", correct: false },
+            { text: "Donegal", correct: true },
+            { text: "Westmeath", correct: false },
+            { text: "Sligo", correct: false }
         ];
 },
 {
-    question: "With which singer is the line 'Ground control to Major Tom' associated",
+    question: "Which international artist played a “Gentlemen of the Road” stopover in Galway?", done
         answers: [
             { text: "Elvis Costello", correct: false },
-            { text: "David Bowie", correct: true },
-            { text: "Tom Jones", correct: false },
-            { text: "David Essex", correct: false }
+            { text: "Bruce Springsteen", correct: false },
+            { text: "Mumford & Sons", correct: true },
+            { text: "Ed Sheeran", correct: false }
         ];
 },
 {
