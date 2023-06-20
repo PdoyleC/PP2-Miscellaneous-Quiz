@@ -1,6 +1,6 @@
-<h1 align="center">Crosshaven Chess Society</h1>
+<h1 align="center">The General Quiz Of Everything</h1>
 
-[View the live project here](https://pdoylec.github.io/Portfolio-1-Project/index.html)
+[View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
 Crosshaven Chess Society is a site that advertises a fictional chess club. The club primarily use is for chess lovers to come and play games against other players or to come and learn how to play. The site is targeted toward people in the Cork area who are close to Crosshaven. The site will be useful for people who want to learn the game and interact with other chess players.
 
