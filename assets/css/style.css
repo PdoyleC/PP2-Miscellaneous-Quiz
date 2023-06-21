@@ -28,18 +28,19 @@ body {
 
 #heading {
     border-radius: 20px;
-    margin-top: 100px;
-    font-style: oblique;
-    color: black;
-    background-color: #e4cdcd;
-    border-radius: 20px;
-    padding: 1px;
-    margin: auto;
-    width: 500px;
-    height: 80px;
-    margin-top: 200px;
-    margin-bottom: 10px;
-    text-align: center;
+        margin-top: 10px;
+        font-style: ;
+        font-size: 1.8em;
+        color: black;
+        background-color: #e4cdcd;
+        border-radius: 20px;
+        padding: 1px;
+        margin: auto;
+        width: 500px;
+        height: 50px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        text-align: center;
 }
 
 #questions-asked {
