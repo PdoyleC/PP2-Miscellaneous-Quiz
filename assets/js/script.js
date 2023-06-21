@@ -9,14 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const questionArea = document.getElementById('questions');
   const answersArea = document.getElementById('answer-choice');
   const restartBut = document.getElementById('restart-btn');
+  const quizsection = document.getElementById('quiz-section');
   let shuffledQuestions; //hold the questions that are random
   let currentQuestionIndex; //index for the current question
   let currentScore = 0;
   let currentIncorrectScore = 0;
   
+   
   //event listeners
   letsGo.addEventListener('click', runGame);
-  
+ 
+   
   
   nextBut.addEventListener('click', () => {
     currentQuestionIndex++;
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   //Quiz game
   
   /**
-   * hides the start button, shuffles the questions amd adds 10
+   * hides the start button, shuffles the questions and adds 10
    * moves onto the first question
    */
   function runGame() {
