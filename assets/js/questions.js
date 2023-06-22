@@ -2,10 +2,10 @@ const questions = [
     {
         question: "How often do lunar eclipses happen each year?",
         answers: [
-            { text: "Three", correct: true },
-            { text: "Five", correct: false },
-            { text: "Seven", correct: false },
-            { text: "Nine", correct: false }
+            { text: "3", correct: true },
+            { text: "5", correct: false },
+            { text: "7", correct: false },
+            { text: "9", correct: false }
         ]
     },
     {
@@ -99,7 +99,7 @@ const questions = [
         ]
 },
 {
-    question: "The world’s fastest ___________ travels at 47 mph.",
+    question: "The worlds fastest ___________ travels at 47 mph.",
         answers: [
             { text: "Big cat", correct: false },
             { text: "Golf cart", correct: false },
