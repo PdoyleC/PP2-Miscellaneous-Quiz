@@ -155,6 +155,19 @@ button:hover {
     animation: glowing 1300ms infinite;
 }
 
+
+/*404 error page*/
+
+.whoops {
+    width: 85%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10px;
+    }
+
+
 /*media queries*/
 
 @media screen and (max-width: 816px) {
