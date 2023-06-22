@@ -1,49 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quiz of a group or collection of different items; a mixture. built using HTML, CSS and Javascript">
-    <meta name="keywords" content="quiz, music, science, history, interactive, general knowledge, HTML, CSS, Javascript">
+    <meta name="description"
+        content="Quiz of a group or collection of different items; a mixture. built using HTML, CSS and Javascript">
+    <meta name="keywords"
+        content="quiz, music, science, history, interactive, general knowledge, HTML, CSS, Javascript">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>General Quiz</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--top heading-->
-    <h1 class="heading">      
-      The General Quiz Of Everything
+    <h1 class="heading">
+        The General Quiz Of Everything
     </h1>
     <!--main game area-->
     <div class="quiz-section">
-      <!--question space-->
-      <div id="questions-cont">
-        <div id="questions">Question</div>
-      </div>
-      <!--Answer buttons-->
-      <div id="answer-choice" class="btn-grid">
-        <button class="btn">A</button>
-        <button class="btn">B</button>
-        <button class="btn">C</button>
-        <button class="btn">D</button>
-      </div>
-      <!--navigation area-->
-      <div class="navigation">
-        <button id="start-btn" class="s-btn">Start</button>
-        <button id="next-btn" class="next-btn hide">Next</button>
-        <button id="restart-btn" class="restart-btn btn hide">Restart</button>
-      </div>
-    
-    <!--score area-->
-        <div class="score-area box">
+        <!--question space-->
+        <div id="questions-cont">
+            <div id="questions-area">Question</div>
+        </div>
+        <!--Answer buttons-->
+        <div id="answer-choice" class="btn-grid">
+            <button class="btn hide">A</button>
+            <button class="btn hide">B</button>
+            <button class="btn hide">C</button>
+            <button class="btn hide">D</button>
+        </div>
+        <!--navigation area-->
+        <div class="navigation">
+            <button id="start-btn" class="s-btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+            <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+        </div>
+
+        <!--score area-->
+        <div class="score-area">
             <p class="scores">Correct Answers: <span id="score">0</span></p>
             <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
         </div>
-                   
+
     </div>
     <!--links for javascript files-->
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
-  </body>
+</body>
+
 </html>
