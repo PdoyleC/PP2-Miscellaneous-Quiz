@@ -12,7 +12,7 @@ const restartBut = document.getElementById('restart-btn');
 const quizsection = document.getElementById('quiz-section');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
-let currentScore = 0;
+let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
 
 
@@ -30,9 +30,9 @@ restartBut.onclick = function () {
     restartBut.classList.add('hide');
     questionCont.classList.add('hide');
     letsGo.classList.remove('hide');
-    currentScore = 0;
+    currentCorrectScore = 0;
     currentIncorrectScore = 0;
-    document.getElementById('score').innerText = currentScore;
+    document.getElementById('correct').innerText = currentCorrectScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
     runGame();
 };
@@ -104,7 +104,7 @@ function checkAnswer(event) {
         endGame();
     }
     if (correct) {
-        incrementScore();
+        incrementCorrectScore();
     } else {
         incrementWrongAnswer();
     }
@@ -124,9 +124,9 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
-function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+function incrementCorrectScore() {
+    let oldScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++oldScore;
 }
 
 function incrementWrongAnswer() {

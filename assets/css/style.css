@@ -60,7 +60,7 @@ body {
 
 /*scoring area*/
 
-#score {
+#correct {
     color: green;
     font-weight: bold;
 }
@@ -79,7 +79,7 @@ body {
 .scores {
     display: inline-block;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     border-radius: 5px;
     border: 1px solid black;
     padding: 1px;
