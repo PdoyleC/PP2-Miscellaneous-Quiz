@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //variables
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
+const timer = document.getElementById('timer-btn');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
 const answersArea = document.getElementById('answer-choice');
@@ -21,53 +22,21 @@ letsGo.addEventListener('click', runGame);
 
 //00000000000000000000000000000
 
-function startTimer(duration, display) {
-    var start = Date.now(),
-        diff,
-        seconds;
-    function timer() {
-        // get the number of seconds that have elapsed since 
-        // startTimer() was called
-        diff = duration - (((Date.now() - start) / 1000) | 0);
-
-        // does the same job as parseInt truncates the float
-        seconds = (diff % 60) | 0;
-
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = seconds; 
-
-        if (diff <= 0) {
-            // add one second so that the count down starts at the full duration
-            // example 05:00 not 04:59
-            start = Date.now() + 1000;
-        }
-    };
-    // we don't want to wait a full second before the timer starts
-    timer();
-    setInterval(timer, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 20 * 1,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-    
-};
 
 
-
-var count = 15;
+var count = 10;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
   count--;
-  if (count === 0){
+  if (count === -2){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Quiz has ended......';
     // or...
     alert("You're out of time!");
   }
 }, 1000);
+
+
 
 
 
