@@ -15,6 +15,7 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
+var sec = 30;
 
 
 //event listeners
@@ -24,7 +25,7 @@ letsGo.addEventListener('click', runGame);
 
 
 
-var sec = 15;
+
 var time = setInterval(myTimer, 1000);
 
 function myTimer() {
@@ -32,7 +33,7 @@ function myTimer() {
     sec--;
     if (sec == -2) {
         clearInterval(time);
-        alert("Time out!! :(");
+        endGame();
     }
 }
 
@@ -52,6 +53,7 @@ restartBut.onclick = function () {
     letsGo.classList.remove('hide');
     currentCorrectScore = 0;
     currentIncorrectScore = 0;
+    sec = 30;
     document.getElementById('correct').innerText = currentCorrectScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
     runGame();
@@ -67,6 +69,7 @@ function runGame() {
     letsGo.classList.add('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
+    sec = 30;
     questionCont.classList.remove('hide');
     getNextQuestion();
 }
@@ -161,7 +164,9 @@ function endGame() {
             Click restart to retry
             `;
     restartBut.classList.remove('hide');
+
 }
+
 function gameOver() {
     numQuiz.textContent = "";
     localStorage.setItem("mostRecentScore", score);
