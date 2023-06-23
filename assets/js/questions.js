@@ -225,12 +225,12 @@ const questions = [
         ]
     },
     {
-        question: "The city of Cork is built on which river?",
+        question: "What is a group of Owls called?",
         answers: [
-            { text: "Bride", correct: false },
-            { text: "Feale", correct: false },
-            { text: "Bandon", correct: false },
-            { text: "Lee", correct: true }
+            { text: "Wisdom", correct: false },
+            { text: "Flamboyance", correct: false },
+            { text: "congress", correct: false },
+            { text: "Parliament", correct: true }
         ]
     },
     {
@@ -333,12 +333,12 @@ const questions = [
         ]
     },
     {
-        question: "What is a group of flamingos called?",
+        question: "What is a group of Flamingos called?",
         answers: [
             { text: "Guide", correct: false },
             { text: "Flamboyance", correct: true },
             { text: "Pride", correct: false },
-            { text: "Herd", correct: false }
+            { text: "Parliament", correct: false }
         ]
     },
     {
