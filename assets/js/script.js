@@ -173,4 +173,9 @@ function endGame() {
 }
 
 
-
+function gameOver() {
+    hide.textContent = "";
+    localStorage.setItem("mostRecentScore", currentCorrectScore);
+    //Go to the end page
+    return window.location.assign("quizover.html");
+}

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything, please click Start to continue';
 });
@@ -171,7 +172,6 @@ function endGame() {
 
 
 }
-
 
 
 
