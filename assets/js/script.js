@@ -15,7 +15,7 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
-var sec = 30;
+var sec = 60;
 
 
 
@@ -34,7 +34,6 @@ function myTimer() {
     if (sec < 0) {
         clearInterval(time);
         alert("You are out of Time, The Quiz is over!! :(");
-        sec = 30;
         endGame();
     }
 }
@@ -52,7 +51,7 @@ restartBut.onclick = function () {
     letsGo.classList.remove('hide');
     currentCorrectScore = 0;
     currentIncorrectScore = 0;
-    sec = 30;
+    sec = 60;
     document.getElementById('correct').innerText = currentCorrectScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
     runGame();
@@ -174,8 +173,8 @@ function endGame() {
 
 
 function gameOver() {
-    hide.textContent = "";
-    localStorage.setItem("mostRecentScore", currentCorrectScore);
+
+    localStorage.setItem("RecentScore", currentCorrectScore);
     //Go to the end page
     return window.location.assign("quizover.html");
 }
