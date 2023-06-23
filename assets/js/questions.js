@@ -184,7 +184,7 @@ const questions = [
         answers: [
             { text: "Cleveland Clinic", correct: false },
             { text: "Massachusetts General Hospital", correct: false },
-            { text: "Mayo Clinic ‑ Rochester", correct: false },
+            { text: "Mayo Clinic ", correct: false },
             { text: "Groote Schuur Hospital", correct: true }
         ]
     },

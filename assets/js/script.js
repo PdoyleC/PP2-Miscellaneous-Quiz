@@ -18,13 +18,12 @@ let currentIncorrectScore = 0;
 var sec = 30;
 
 
+
+
 //event listeners
 letsGo.addEventListener('click', runGame);
 
-//00000000000000000000000000000
-
-
-
+//timer
 
 var time = setInterval(myTimer, 1000);
 
@@ -110,6 +109,7 @@ function defaultState() {
     }
 }
 
+
 /**checks user answer and increments score if correct
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
@@ -165,6 +165,7 @@ function endGame() {
             `;
     restartBut.classList.remove('hide');
 
+
 }
 
 function gameOver() {
@@ -172,4 +173,5 @@ function gameOver() {
     localStorage.setItem("mostRecentScore", score);
     //Go to the end page
     return window.location.assign("end_game.html");
+    sec = 30;
 }
