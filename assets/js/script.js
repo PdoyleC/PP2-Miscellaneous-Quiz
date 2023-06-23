@@ -24,18 +24,17 @@ letsGo.addEventListener('click', runGame);
 
 
 
-var count = 10;
-var interval = setInterval(function(){
-  document.getElementById('count').innerHTML=count;
-  count--;
-  if (count === -2){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='Quiz has ended......';
-    // or...
-    alert("You're out of time!");
-  }
-}, 1000);
+var sec = 15;
+var time = setInterval(myTimer, 1000);
 
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec;
+    sec--;
+    if (sec == -2) {
+        clearInterval(time);
+        alert("Time out!! :(");
+    }
+}
 
 
 

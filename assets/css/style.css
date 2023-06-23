@@ -97,6 +97,11 @@ body {
     font-size: 1.2rem;
 }
 
+#timer {
+    color: red;
+    font-size: 1.2rem;
+}
+
 /*answer section*/
 
 #answer-choice {
@@ -175,7 +180,7 @@ button:hover {
     margin-right: auto;
     padding: 1%;
     border-radius: 10px;
-    }
+}
 
 
 /*media queries*/
