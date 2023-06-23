@@ -162,8 +162,17 @@ function endGame() {
             <br>
             Click restart to retry
             `;
+    return window.location.assign("gameover.html");
     restartBut.classList.remove('hide');
 
 
+}
+
+
+function gameOver() {
+    numQuiz.textContent = "";
+    localStorage.setItem("mostRecentScore", score);
+    //Go to the end page
+    return window.location.assign("end_game.html");
 }
 

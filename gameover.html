@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Quiz of a group or collection of different items; a mixture. built using HTML, CSS and Javascript">
+    <meta name="keywords"
+        content="quiz, music, science, history, interactive, general knowledge, HTML, CSS, Javascript">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>General Quiz</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/question-mark.png">
+
+</head>
+
+<body>
+    <!--Heading-->
+    <h1 class="heading">
+        The General Quiz Of Everything
+    </h1>
+    <!--Game Area-->
+    <div class="quiz-section">
+        <!--Question Area-->
+        <div id="questions-cont">
+            <div id="questions-area">Question</div>
+        </div>
+        <!--Answer Area-->
+        <div id="answer-choice" class="btn">
+            <button class="btn "></button>
+            <button class="btn "></button>
+            <button class="btn "></button>
+            <button class="btn "></button>
+        </div>
+
+        <!--Input Area-->
+        <div class="navigation">
+            <button id="start-btn" class="s-btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+            <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+        </div>
+
+        <!--Score-->
+        <div class="score-area">
+            <p class="scores">Correct Answers: <span id="correct">0</span></p>
+            <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+
+
+
+        </div>
+
+    </div>
+    <!--links to javascript-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
+</body>
+
+</html>
