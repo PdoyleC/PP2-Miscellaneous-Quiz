@@ -23,6 +23,7 @@ var sec = 30;
 //event listeners
 letsGo.addEventListener('click', runGame);
 
+
 //timer
 
 var time = setInterval(myTimer, 1000);
@@ -30,8 +31,10 @@ var time = setInterval(myTimer, 1000);
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec == -2) {
+    if (sec < 0) {
         clearInterval(time);
+        alert("You are out of Time, The Quiz is over!! :(");
+        sec = 30;
         endGame();
     }
 }
@@ -68,7 +71,6 @@ function runGame() {
     letsGo.classList.add('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-    sec = 30;
     questionCont.classList.remove('hide');
     getNextQuestion();
 }
@@ -168,10 +170,3 @@ function endGame() {
 
 }
 
-function gameOver() {
-    numQuiz.textContent = "";
-    localStorage.setItem("mostRecentScore", score);
-    //Go to the end page
-    return window.location.assign("end_game.html");
-    sec = 30;
-}
