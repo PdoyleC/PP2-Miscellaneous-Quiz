@@ -52,8 +52,6 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 </details>
 
-### Class Timetable
-
 ### Footer
 
 [Back to contents](#contents)
@@ -117,12 +115,10 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Code
 
-* This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
-* Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
-* Code institute for course material and content for correct and incorrect scoring.
-* Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
-
-
+- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
+- Code institute for course material and content for correct and incorrect scoring.
+- Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
 
 ### Media
 
