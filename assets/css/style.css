@@ -109,6 +109,7 @@ body {
     color: red;
     font-size: 1.2rem;
 }
+
 #time {
     color: red;
     font-size: 1.2rem;
@@ -159,6 +160,11 @@ button:hover {
 #restart-btn {
     width: 50%;
     margin: 10px 0;
+}
+
+#restartplay-btn {
+    width: 12%;
+    margin: 8px 0;
 }
 
 @keyframes glowing {
