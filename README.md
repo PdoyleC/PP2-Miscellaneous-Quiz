@@ -2,7 +2,7 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-Crosshaven Chess Society is a site that advertises a fictional chess club. The club primarily use is for chess lovers to come and play games against other players or to come and learn how to play. The site is targeted toward people in the Cork area who are close to Crosshaven. The site will be useful for people who want to learn the game and interact with other chess players.
+The General Quiz Of Everything is a site where people can come and test there knowledge.
 
 ![Mockup](documentation/mockup.jpg)
 
@@ -67,7 +67,7 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 <details>
 <summary>Font Image</summary>
 
-![Font Image](fonts.jpg)
+![Font Image](documentation/fonts.jpg)
 
 </details>
 
@@ -137,10 +137,12 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Code
 
-- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
-- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
-- Code institute for course material and content for correct and incorrect scoring.
-- Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
+* This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+* Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
+* Code institute for course material and content for correct and incorrect scoring.
+* Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
+* Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz).
+
 
 ### Media
 
