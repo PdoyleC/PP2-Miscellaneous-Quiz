@@ -36,8 +36,8 @@ restartBut.onclick = function () {
     sec = 60;
     document.getElementById('correct').innerText = currentCorrectScore;
     document.getElementById('incorrect').innerText = currentIncorrectScore;
-    return window.location.assign("index.html");
     runGame();
+    return window.location.assign("index.html");
 };
 
 function runGame() {
@@ -62,6 +62,7 @@ function endGame() {
     }, 3000);
     return window.location.assign("index.html");
     restartBut.classList.remove('hide');
+    return window.location.assign("index.html");
 
 
 }
