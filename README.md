@@ -92,6 +92,14 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ### Inspect
 
+<details>
+<summary>Background Image</summary>
+
+![Background Image](documentation/ongoingtesting.jpg)
+![Background Image](documentation/ongoingtesting1.jpg)
+
+</details>
+
 ### 404 ERROR
 
 [Back to contents](#contents)
