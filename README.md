@@ -45,15 +45,16 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 ### Background Image
 
 - The image is by Rachel Claire and is from [Pexels.com](httpswww.pexels.comphotomerchandise-in-store-5865390)
-  ![Background Image](documentation/misc1.jpg)
+<details>
+<summary>Background Image</summary>
+
+![Background Image](documentation/misc1.jpg)
+
+</details>
 
 ### Class Timetable
 
 ### Footer
-
-### Puzzle Page
-
-### Contact Page
 
 [Back to contents](#contents)
 
@@ -75,13 +76,9 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ## Structure and Skeleton
 
-### [Wireframes
+### Wireframes
 
 ### Home Page
-
-### Puzzle Page
-
-### Contact Page
 
 [Back to contents](#contents)
 
@@ -107,6 +104,9 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ## Deployment and Development
 
+The project was deployed to Github pages using the following steps:
+Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/).
+
 ## Technologies Used
 
 [Back to contents](#contents)
@@ -116,6 +116,13 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 ### Content
 
 ### Code
+
+* This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+* Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
+* Code institute for course material and content for correct and incorrect scoring.
+* Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
+
+
 
 ### Media
 
