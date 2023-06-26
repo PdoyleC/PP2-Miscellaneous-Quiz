@@ -64,6 +64,13 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ### Fonts
 
+<details>
+<summary>Font Image</summary>
+
+![Font Image](fonts.jpg)
+
+</details>
+
 [Back to contents](#contents)
 
 ## Future Adaptations
@@ -90,13 +97,20 @@ Crosshaven Chess Society is a site that advertises a fictional chess club. The c
 
 ### Site Validation
 
+<details>
+<summary>Connection Test</summary>
+
+![Connection Test Image](initionalconnectiontest.jpg)
+
+</details>
+
 ### Inspect
 
 <details>
-<summary>Background Image</summary>
+<summary>Inspect Testing</summary>
 
-![Background Image](documentation/ongoingtesting.jpg)
-![Background Image](documentation/ongoingtesting1.jpg)
+![Inspect Testing](documentation/ongoingtesting.jpg)
+![Inspect Testing](documentation/ongoingtesting1.jpg)
 
 </details>
 
