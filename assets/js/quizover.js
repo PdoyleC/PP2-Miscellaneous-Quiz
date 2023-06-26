@@ -46,4 +46,22 @@ function runGame() {
     currentQuestionIndex = 0;
     questionCont.classList.remove('hide');
     getNextQuestion();
+
+
+}
+
+function endGame() {
+    document.getElementById('questions-area').innerHTML = `
+            <strong><em>Quiz Of Everything!</em></strong>
+            <br>
+            Click restart to retry
+            `;
+    //* setTimeout(myFunction, 3000);
+    setTimeout(() => {
+        checkAnswer();
+    }, 3000);
+    return window.location.assign("index.html");
+    restartBut.classList.remove('hide');
+
+
 }
