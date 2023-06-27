@@ -100,7 +100,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 <details>
 <summary>Connection Test</summary>
 
-![Connection Test Image](initionalconnectiontest.jpg)
+![Connection Test Image](documentation/initionalconnectiontest.jpg)
 
 </details>
 
@@ -137,12 +137,11 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Code
 
-* This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
-* Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
-* Code institute for course material and content for correct and incorrect scoring.
-* Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
-* Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz).
-
+- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
+- Code institute for course material and content for correct and incorrect scoring.
+- Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
+- Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz).
 
 ### Media
 
