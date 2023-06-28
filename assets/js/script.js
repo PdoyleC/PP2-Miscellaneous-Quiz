@@ -22,6 +22,7 @@ var sec = 60;
 
 //event listeners
 letsGo.addEventListener('click', runGame);
+letsGo.addEventListener('click', myTimer);
 
 
 //timer
@@ -37,8 +38,6 @@ function myTimer() {
         endGame();
     }
 }
-
-//00000000000000000000000000000
 
 nextBut.addEventListener('click', () => {
     currentQuestionIndex++;
@@ -145,15 +144,20 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+
 function incrementCorrectScore() {
     let oldScore = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = ++oldScore;
+    document.getElementById("correct").innerText = oldScore + 1;   //* ++oldscore can also be used here, changed from CI;
 }
 
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
+    document.getElementById("incorrect").innerText = oldScore + 1;
 }
+
 
 function endGame() {
     document.getElementById('questions-area').innerHTML = `
