@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
 const timershow = document.getElementById('timer-btn');
+const clicksshow = document.getElementById('clicks-btn');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
 const answersArea = document.getElementById('answer-choice');
@@ -68,6 +69,8 @@ restartBut.onclick = function () {
 function runGame() {
     letsGo.classList.add('hide');
     timershow.classList.remove('hide');
+    clicksshow.classList.remove('hide');
+
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
     clicks += 1;    //added to increment number of question completed
