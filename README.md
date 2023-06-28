@@ -28,8 +28,12 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Features
 
+There are 10 questions that appeared randomly out of a totol of 40.
+There score is visible on the screen.
+There is a countdown timer which end the quiz after 60 seconds.
+
 <details>
-<summary>Background Image</summary>
+<summary>Features Image</summary>
 
 ![Features Home Image](documentation/features.jpg)
 ![Features Questions Image](documentation/features1.jpg)
