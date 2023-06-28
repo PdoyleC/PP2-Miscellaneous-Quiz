@@ -9,18 +9,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ## Contents
 
 ## Project Goals
-
-### Site Overview
-
-### Project Goals
-
-### For the user
-
-### For the club owner
-
-### Site Owner Goals
-
-### How This Will Be Achieved
+* To create a quiz that covers a wide variety of subjects.
 
 ### User Feedback
 
@@ -37,8 +26,12 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Features
+<details>
+<summary>Background Image</summary>
 
-### Logo
+![Background Image](documentation/misc1.jpg)
+
+</details>
 
 ### Background Image
 
