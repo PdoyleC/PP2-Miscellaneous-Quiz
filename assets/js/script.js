@@ -16,7 +16,7 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
-var sec = 220;
+var sec = 120; //this give time
 var clicks = 0;
 
 
@@ -46,6 +46,7 @@ nextBut.addEventListener('click', () => {
     getNextQuestion();
     clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
+    sec = 20; //added so there is 20 sec per question
 });
 
 restartBut.onclick = function () {
@@ -70,9 +71,9 @@ function runGame() {
     letsGo.classList.add('hide');
     timershow.classList.remove('hide');
     clicksshow.classList.remove('hide');
-
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
+    sec = 20; //added so there is 20 sec per question
     clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
     questionCont.classList.remove('hide');
