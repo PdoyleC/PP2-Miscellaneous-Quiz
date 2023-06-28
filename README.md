@@ -38,13 +38,11 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Features
 
-### Navigation Bar
-
 ### Logo
 
 ### Background Image
 
-- The image is by Rachel Claire and is from [Pexels.com](httpswww.pexels.comphotomerchandise-in-store-5865390)
+- The image is by Rachel Claire and is from [Pexels.com](https://www.pexels.com/photo/merchandise-in-store-5865390/)
 <details>
 <summary>Background Image</summary>
 
