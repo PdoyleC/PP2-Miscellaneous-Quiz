@@ -15,33 +15,43 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
-var sec = 60;
+var sec = 220;
+var clicks = 0;
 
 
 
 
 //event listeners
 letsGo.addEventListener('click', runGame);
-letsGo.addEventListener('click', myTimer);
+
 
 
 //timer
 
-var time = setInterval(myTimer, 1000);
 
-function myTimer() {
-    document.getElementById('timer').innerHTML = sec;
-    sec--;
-    if (sec < 0) {
-        clearInterval(time);
-        alert("You are out of Time, The Quiz is over!! :(");
-        endGame();
-    }
-}
+window.onload = function () {
+    var minute = 1;
+    var sec = 20;
+    setInterval(function () {
+        document.getElementById("timer").innerHTML = minute + ":" + sec;
+        sec--;
+
+        if (sec == 00) {
+            minute--;
+            sec = 60;
+
+            if (minute == 0) {
+                minute = 5;
+            }
+        }
+    }, 1000);
+};
 
 nextBut.addEventListener('click', () => {
     currentQuestionIndex++;
     getNextQuestion();
+    clicks += 1;    //added to increment number of question completed
+    document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
 });
 
 restartBut.onclick = function () {
@@ -66,6 +76,8 @@ function runGame() {
     letsGo.classList.add('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
+    clicks += 1; //added to increment number of question completed
+    document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
     questionCont.classList.remove('hide');
     getNextQuestion();
 }
@@ -173,12 +185,4 @@ function endGame() {
     restartBut.classList.remove('hide');
 
 
-}
-
-
-function gameOver() {
-
-    localStorage.setItem("RecentScore", currentCorrectScore);
-    //Go to the end page
-    return window.location.assign("quizover.html");
 }
