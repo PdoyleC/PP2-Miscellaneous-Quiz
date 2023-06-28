@@ -30,7 +30,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - There are 10 questions that appeared randomly out of a totol of 40.
 - The players score is visible on the screen under the quiz.
-- There is a countdown timer which end the quiz after 60 seconds.
+- There is a countdown timer which end the quiz after 20 seconds if the question isn't answered,which appears after the start button is pressed.
+- There is a progress counter which appears after the start button is pressed.
 
 <details>
 <summary>Features Image</summary>
@@ -144,7 +145,7 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 - Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
 - Code institute for course material and content for correct and incorrect scoring.
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
-- Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown. 
+- Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.
 
 ### Media
 

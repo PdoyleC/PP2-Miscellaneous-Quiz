@@ -16,7 +16,7 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
-var sec = 120; //this give time
+var sec = 180; //this gives time to start the quiz
 var clicks = 0;
 
 
