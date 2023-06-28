@@ -9,7 +9,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ## Contents
 
 ## Project Goals
-* To create a quiz that covers a wide variety of subjects.
+
+- To create a quiz that covers a wide variety of subjects.
 
 ### User Feedback
 
@@ -26,10 +27,14 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Features
+
 <details>
 <summary>Background Image</summary>
 
-![Background Image](documentation/misc1.jpg)
+![Features Home Image](documentation/features.jpg)
+![Features Questions Image](documentation/features1.jpg)
+![Background TimeOut Image](documentation/features2.jpg)
+![Background QuizOver Image](documentation/features3.jpg)
 
 </details>
 
