@@ -28,24 +28,17 @@ letsGo.addEventListener('click', runGame);
 
 //timer
 
+var time = setInterval(myTimer, 1000);
 
-window.onload = function () {
-    var minute = 1;
-    var sec = 20;
-    setInterval(function () {
-        document.getElementById("timer").innerHTML = minute + ":" + sec;
-        sec--;
-
-        if (sec == 00) {
-            minute--;
-            sec = 60;
-
-            if (minute == 0) {
-                minute = 5;
-            }
-        }
-    }, 1000);
-};
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec;
+    sec--;
+    if (sec < 0) {
+        clearInterval(time);
+        alert("You are out of Time, The Quiz is over!! :(");
+        endGame();
+    }
+}
 
 nextBut.addEventListener('click', () => {
     currentQuestionIndex++;
@@ -74,9 +67,10 @@ restartBut.onclick = function () {
  */
 function runGame() {
     letsGo.classList.add('hide');
+
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-    clicks += 1; //added to increment number of question completed
+    clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
     questionCont.classList.remove('hide');
     getNextQuestion();
