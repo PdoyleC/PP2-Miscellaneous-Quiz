@@ -83,7 +83,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 2000; //added so there is 20 sec per question at 2000 to test code and css style
+    sec = 2000; //added so there is 20 sec per question currently at 2000 to test code and correct css style
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //added to increment number of question completed
