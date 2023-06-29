@@ -81,7 +81,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 20; //added so there is 20 sec per question
+    sec = 2000; //added so there is 20 sec per question at 2000 to test code and css style
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //added to increment number of question completed
@@ -98,7 +98,7 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 20; //added so there is 20 sec per question
+    sec = 2000; //added so there is 20 sec per question
     letsGo.classList.add('hide');
 
     quizRules.classList.add('hide');
