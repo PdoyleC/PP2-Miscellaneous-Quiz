@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
 const timershow = document.getElementById('timer-btn');
+const scoresshow = document.getElementById('scores-btn');
+const scoresinshow = document.getElementById('scoresin-btn');
 const clicksshow = document.getElementById('clicks-btn');
 const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-div');
@@ -109,6 +111,8 @@ function runGame() {
     myLabel.classList.add('hide');
     infoFront.classList.add('hide');
     timershow.classList.remove('hide');
+    scoresshow.classList.remove('hide');
+    scoresinshow.classList.remove('hide');
     clicksshow.classList.remove('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
