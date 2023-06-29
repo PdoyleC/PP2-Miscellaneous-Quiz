@@ -13,7 +13,6 @@ const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
 const answersArea = document.getElementById('answer-choice');
-const restartBut = document.getElementById('restart-btn');
 const quizsection = document.getElementById('quiz-section');
 const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
@@ -24,7 +23,7 @@ let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
 let currentIncorrectScore = 0;
-var sec = 180; //this gives time to start the quiz
+var sec = 1800; //this gives time to start the quiz
 var clicks = 0;
 
 
@@ -74,11 +73,12 @@ submit.addEventListener('click', function () {
 
     } else {
         finishText.classList.remove('hide');
-        document.getElementById('finish-text-score').innerHTML = `OOPS, you didn't type your name. Please enter your name and then press submit.`;
+        document.getElementById('finish-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`;
     }
+
 });
 
-letsStart.addEventListener('click', runGame);
+letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
     sec = 20; //added so there is 20 sec per question
@@ -89,17 +89,7 @@ nextBut.addEventListener('click', () => {
 
 });
 
-restartBut.onclick = function () {
-    restartBut.classList.add('hide');
-    questionCont.classList.add('hide');
-    letsGo.classList.remove('hide');
-    currentCorrectScore = 0;
-    currentIncorrectScore = 0;
-    sec = 60;
-    document.getElementById('correct').innerText = currentCorrectScore;
-    document.getElementById('incorrect').innerText = currentIncorrectScore;
-    runGame();
-};
+
 
 //Quiz game
 
@@ -110,11 +100,18 @@ restartBut.onclick = function () {
 function runGame() {
     sec = 20; //added so there is 20 sec per question
     letsGo.classList.add('hide');
+
+    quizRules.classList.add('hide');
+    finishText.classList.add('hide');
+    rulesDiv.classList.add('hide');
+    form.classList.add('hide');
+    submit.classList.add('hide');
+    myLabel.classList.add('hide');
+    infoFront.classList.add('hide');
     timershow.classList.remove('hide');
     clicksshow.classList.remove('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-
     clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
     questionCont.classList.remove('hide');
@@ -221,7 +218,4 @@ function endGame() {
         checkAnswer();
     }, 3000);
     return window.location.assign("quizover.html");
-    restartBut.classList.remove('hide');
-
-
 }
