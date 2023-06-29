@@ -7,7 +7,7 @@ const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
 const timershow = document.getElementById('timer-btn');
 const clicksshow = document.getElementById('clicks-btn');
-const rules = document.getElementById('rules-btn');
+const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-div');
 const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
@@ -30,7 +30,7 @@ var clicks = 0;
 
 //event listeners
 quizRules.addEventListener('click', function () {
-    rules.classList.add('hide');
+    quizRules.classList.add('hide');
     infoFront.classList.add('hide');
     form.classList.add('hide');
     rulesDiv.classList.remove('hide');
@@ -52,6 +52,7 @@ function myTimer() {
         endGame();
     }
 }
+
 
 nextBut.addEventListener('click', () => {
     sec = 20; //added so there is 20 sec per question
