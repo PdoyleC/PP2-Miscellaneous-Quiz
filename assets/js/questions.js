@@ -11,9 +11,9 @@ const questions = [
     {
         question: 'In "Always Sunny in Philadelphia", what fruit does Charlie eat for the very first time?',
         answers: [
-            { text: "An Pear", correct: true },
+            { text: "A Pear", correct: true },
             { text: "An Apple", correct: false },
-            { text: "Blueberry", correct: false },
+            { text: "Blueberrys", correct: false },
             { text: "A Plum", correct: false }
         ]
     },
