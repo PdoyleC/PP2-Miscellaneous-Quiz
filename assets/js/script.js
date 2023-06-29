@@ -24,7 +24,7 @@ var clicks = 0;
 
 //event listeners
 letsGo.addEventListener('click', runGame);
-
+letsGo.classList.remove('hide');
 
 
 //timer
