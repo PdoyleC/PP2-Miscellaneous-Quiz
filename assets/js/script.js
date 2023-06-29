@@ -42,11 +42,12 @@ function myTimer() {
 }
 
 nextBut.addEventListener('click', () => {
+    sec = 20; //added so there is 20 sec per question
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
-    sec = 20; //added so there is 20 sec per question
+
 });
 
 restartBut.onclick = function () {
@@ -68,12 +69,13 @@ restartBut.onclick = function () {
  * moves onto the first question
  */
 function runGame() {
+    sec = 20; //added so there is 20 sec per question
     letsGo.classList.add('hide');
     timershow.classList.remove('hide');
     clicksshow.classList.remove('hide');
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-    sec = 20; //added so there is 20 sec per question
+
     clicks += 1;    //added to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
     questionCont.classList.remove('hide');
