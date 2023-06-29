@@ -22,71 +22,76 @@
         The General Quiz Of Everything
     </h1>
 
-    <!-- rules and submit area -->
-    <div class="controls btn-flex">
-        <p id="info"> Are you looking to test your General Knowledge? <br> Well look no further, please read the rules
-            and
-            enter your username to START.</p>
-        <!-- <button id="quiz-rules" class="btn">Rules</button> -->
-        <button id="quiz-rules" class="btn">Rules</button>
-        <form id="form">
-            <label id="myLabel">What is your name?</label><br>
-            <input type="text" id="myName" name="fname"><br>
-            <button type="button" id="myButton" class="btn">Submit</button>
-        </form>
 
 
-        <!-- rules -->
-        <div id="rules-div" class="hide">
-            <h2>Instructions</h2>
-            <p>
-                1- Enter your name for quiz to start. <br>
-                2- You have 20 seconds to answer each question, Timer is displayed under the answers selection.<br>
-                3- Once an answer is selected, the correct answer will turn green.<br>
-                4- It's required to select an answer to move on to the next question. <br>
-                5- Answer all 10 questions to end quiz<br>
-                6- You have 20 seconds to answer each question.<br>
-                7- If you don't answer in the 20 sec's the quiz will end.<br>
-            </p>
-
-            <button id="close-btn" class="btn">Close</button>
+    <!--Game Area-->
+    <div class="quiz-section">
+        <!--Question Area-->
+        <div id="questions-cont">
+            <div id="questions-area">Question</div>
         </div>
 
-        <!--Game Area-->
-        <div class="quiz-section">
-            <!--Question Area-->
-            <div id="questions-cont">
-                <div id="questions-area">Question</div>
-            </div>
-            <!--Answer Area-->
-            <div id="answer-choice" class="btn">
-                <button class="btn hide"></button>
-                <button class="btn hide"></button>
-                <button class="btn hide"></button>
-                <button class="btn hide"></button>
-            </div>
+        <!-- rules and submit area -->
+        <div class="quiz-section btn-flex">
+            <p id="info"> Are you looking to test your General Knowledge? <br> Well look no further, please read the
+                rules
+                and
+                enter your username to START.</p>
+            <!-- <button id="quiz-rules" class="btn">Rules</button> -->
+            <button id="quiz-rules" class="btn">Rules</button>
+            <form id="form">
+                <label id="myLabel">Enter your name?</label><br>
+                <input type="text" id="myName" name="fname"><br>
+                <button type="button" id="submit" class="btn">Submit</button>
+            </form>
+            <!-- rules -->
+            <div id="rules-div" class="hide">
+                <h2>Instructions</h2>
+                <p>
+                    1- Enter your name for quiz to start. <br>
+                    2- You have 20 seconds to answer each question, Timer is displayed under the answers selection.<br>
+                    3- Once an answer is selected, the correct answer will turn green.<br>
+                    4- It's required to select an answer to move on to the next question. <br>
+                    5- Answer all 10 questions to end quiz<br>
+                    6- You have 20 seconds to answer each question.<br>
+                    7- If you don't answer in the 20 sec's the quiz will end.<br>
+                </p>
 
-            <!--Input Area-->
-            <div class="navigation">
-                <button id="start-btn" class="s-btn hide">Start</button>
-                <button id="next-btn" class="next-btn hide">Next</button>
+                <button id="close-btn" class="btn">Close</button>
             </div>
-
-            <!--Score-->
-            <div class="score-area">
-                <p class="scores">Correct Answers: <span id="correct">0</span></p>
-                <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-                <button id="timer-btn" class="timer-btn hide">You have <span id="timer"></span>s to answer </button>
-                <button id="clicks-btn" class="clicks-btn hide">Question <span id="clicks">0</span> of 10</button>
-                <!--<button class="timer-btn">Quiz Ends in <span id="timer"></span> Seconds!</button>-->
-                <!--<p class="scores">Question <a id="clicks">0</a> of 10</p>-->
-
-            </div>
-
+            <p id="finish-text-score" class="hide"> ? </p>
         </div>
-        <!--links to javascript-->
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/questions.js"></script>
+    </div>
+
+    <!--Answer Area-->
+    <div id="answer-choice" class="btn">
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+    </div>
+
+    <!--Input Area-->
+    <div class="navigation">
+        <button id="start-btn" class="s-btn hide">Start</button>
+        <button id="next-btn" class="next-btn hide">Next</button>
+    </div>
+
+    <!--Score-->
+    <div class="score-area">
+        <p class="scores">Correct Answers: <span id="correct">0</span></p>
+        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+        <button id="timer-btn" class="timer-btn hide">You have <span id="timer"></span>s to answer </button>
+        <button id="clicks-btn" class="clicks-btn hide">Question <span id="clicks">0</span> of 10</button>
+        <!--<button class="timer-btn">Quiz Ends in <span id="timer"></span> Seconds!</button>-->
+        <!--<p class="scores">Question <a id="clicks">0</a> of 10</p>-->
+
+    </div>
+
+    </div>
+    <!--links to javascript-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 
 </html>

@@ -139,6 +139,22 @@ body {
     padding: 10px;
 }
 
+.btn-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 5px auto;
+    flex-direction: column;
+}
+
+#finish-text-score {
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 button {
     margin: 5px;
     width: 90%;
@@ -173,7 +189,7 @@ button:hover {
 #start-btn,
 #next-btn,
 #restart-btn {
-    width: 50%;
+    width: 100%;
     margin: 10px 0;
 }
 

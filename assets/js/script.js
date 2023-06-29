@@ -16,6 +16,8 @@ const answersArea = document.getElementById('answer-choice');
 const restartBut = document.getElementById('restart-btn');
 const quizsection = document.getElementById('quiz-section');
 const closeBtn = document.getElementById('close-btn');
+let submit = document.getElementById('submit');
+let myLabel = document.getElementById('myLabel');
 let form = document.getElementById('form');
 let finishText = document.getElementById('finish-text-score');
 let shuffledQuestions; //hold the questions that are random
@@ -53,6 +55,30 @@ function myTimer() {
     }
 }
 
+function reset() {
+    quizRules.classList.remove('hide');
+    finishText.classList.add('hide');
+    rulesDiv.classList.add('hide');
+    form.classList.remove('hide');
+    submit.classList.remove('hide');
+    myLabel.classList.remove('hide');
+    infoFront.classList.remove('hide');
+}
+
+submit.addEventListener('click', function () {
+    myName = document.getElementById('myName').value;
+    if (myName) {
+
+        letsGo.classList.remove('hide');
+        finishText.classList.add('hide');
+
+    } else {
+        finishText.classList.remove('hide');
+        document.getElementById('finish-text-score').innerHTML = `OOPS, you didn't type your name. Please enter your name and then press submit.`;
+    }
+});
+
+letsStart.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
     sec = 20; //added so there is 20 sec per question
