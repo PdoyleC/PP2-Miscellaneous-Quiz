@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything, please click Start to continue';
+    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything';
 });
 
 //variables
@@ -7,11 +7,17 @@ const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
 const timershow = document.getElementById('timer-btn');
 const clicksshow = document.getElementById('clicks-btn');
+const rules = document.getElementById('rules-btn');
+const rulesDiv = document.getElementById('rules-div');
+const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
 const answersArea = document.getElementById('answer-choice');
 const restartBut = document.getElementById('restart-btn');
 const quizsection = document.getElementById('quiz-section');
+const closeBtn = document.getElementById('close-btn');
+let form = document.getElementById('form');
+let finishText = document.getElementById('finish-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
@@ -23,9 +29,15 @@ var clicks = 0;
 
 
 //event listeners
-letsGo.addEventListener('click', runGame);
-letsGo.classList.remove('hide');
-
+quizRules.addEventListener('click', function () {
+    rules.classList.add('hide');
+    infoFront.classList.add('hide');
+    form.classList.add('hide');
+    rulesDiv.classList.remove('hide');
+    finishText.classList.add('hide');
+    closeBtn.addEventListener('click', reset);
+    console.log(quizRules);
+});
 
 //timer
 
