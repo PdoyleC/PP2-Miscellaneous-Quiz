@@ -12,6 +12,7 @@ const finalscoresinshow = document.getElementById('finalscoresin-btn');
 const clicksshow = document.getElementById('clicks-btn');
 const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-div');
+const quizoverDiv = document.getElementById('quizover-div');
 const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
@@ -227,10 +228,11 @@ function endGame() {
     //*  return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
+
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');
     finalscoresinshow.classList.remove('hide');
-    quizRules.classList.add('hide');
+    quizRules.classList.remove('hide');
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
