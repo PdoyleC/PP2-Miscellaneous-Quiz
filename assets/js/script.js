@@ -17,7 +17,6 @@ const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
 const answersArea = document.getElementById('answer-choice');
-const quizsection = document.getElementById('quiz-section');
 const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
 let myLabel = document.getElementById('myLabel');
@@ -114,6 +113,7 @@ function runGame() {
     submit.classList.add('hide'); //code was added by me to hide rules and text
     myLabel.classList.add('hide'); //code was added by me to hide rules and text
     infoFront.classList.add('hide'); //code was added by me to hide rules and text
+    answersArea.classList.remove('hide');
     timershow.classList.remove('hide'); //code was added by me to show timer
     scoresshow.classList.remove('hide'); //code was added by me to show score
     scoresinshow.classList.remove('hide'); //code was added by me to show score
@@ -228,11 +228,11 @@ function endGame() {
     //*  return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
-
+    answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');
     finalscoresinshow.classList.remove('hide');
-    quizRules.classList.remove('hide');
+    quizRules.classList.add('hide');
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
