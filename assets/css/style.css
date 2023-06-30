@@ -68,6 +68,17 @@ body {
     background: white;
 }
 
+#finish-text-score {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+
 /*scoring area*/
 
 #correct {

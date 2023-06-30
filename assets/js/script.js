@@ -44,19 +44,21 @@ quizRules.addEventListener('click', function () {
     console.log(quizRules);
 });
 
-//timer
+//timer code was added by me to set a time for each question
 
 var time = setInterval(myTimer, 1000);
 
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec < -1) { // minus 1 is used for the seconds to get to zero
+    if (sec < -1) { // minus 1 added by me and is used for the seconds to get to zero
         clearInterval(time);
         alert("You are out of Time, The Quiz is over!! :(");
         endGame();
     }
 }
+
+// reset code was added by me to show and hide btns and text
 
 function reset() {
     quizRules.classList.remove('hide');
@@ -85,11 +87,11 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 20; //added so there is 20 sec per question currently at 2000 to test code and correct css style
+    sec = 20; //code was added by me so there is 20 sec per question currently at 2000 to test code and correct css style
     currentQuestionIndex++;
     getNextQuestion();
-    clicks += 1;    //added to increment number of question completed
-    document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
+    clicks += 1;    //code was added by me to increment number of question completed
+    document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
 
 });
 
@@ -102,24 +104,23 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 20; //added so there is 20 sec per question
+    sec = 20; //code was added by me so there is 20 sec per question
     letsGo.classList.add('hide');
-
-    quizRules.classList.add('hide');
-    finishText.classList.add('hide');
-    rulesDiv.classList.add('hide');
-    form.classList.add('hide');
-    submit.classList.add('hide');
-    myLabel.classList.add('hide');
-    infoFront.classList.add('hide');
-    timershow.classList.remove('hide');
-    scoresshow.classList.remove('hide');
-    scoresinshow.classList.remove('hide');
-    clicksshow.classList.remove('hide');
+    quizRules.classList.add('hide'); //code was added by me to hide rules and text
+    finishText.classList.add('hide'); //code was added by me to hide rules and text
+    rulesDiv.classList.add('hide'); //code was added by me to hide rules and text
+    form.classList.add('hide'); //code was added by me to hide rules and text
+    submit.classList.add('hide'); //code was added by me to hide rules and text
+    myLabel.classList.add('hide'); //code was added by me to hide rules and text
+    infoFront.classList.add('hide'); //code was added by me to hide rules and text
+    timershow.classList.remove('hide'); //code was added by me to show timer
+    scoresshow.classList.remove('hide'); //code was added by me to show score
+    scoresinshow.classList.remove('hide'); //code was added by me to show score
+    clicksshow.classList.remove('hide'); //code was added by me to show progress
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-    clicks += 1;    //added to increment number of question completed
-    document.getElementById("clicks").innerHTML = clicks; //added to increment number of question completed
+    clicks += 1;    //code was added by me to increment number of question completed
+    document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
     questionCont.classList.remove('hide');
     getNextQuestion();
 }
@@ -226,8 +227,11 @@ function endGame() {
     //*  return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
-    scoresshow;
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');
     finalscoresinshow.classList.remove('hide');
+    quizRules.classList.add('hide');
+    infoFront.classList.add('hide');
+    form.classList.add('hide');
+    finishText.classList.add('hide');
 }
