@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything 3333';
-    document.getElementById('questions-area1').innerText = 'Congratulations ${myName}. you have 222222 completed the Quiz';
-    document.getElementById('questions-area1').innerHTML = `Congratulations ${myName}.  you have 222222 completed the Quiz'. Thank you for playing this Quiz,`;
-    playAgain.classList.remove('hide');
+    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything';
+    document.getElementById('questions-area1').innerText = 'Congratulations You have completed the Quiz';
 });
 
 //variables
@@ -183,7 +181,8 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else {
-        endGame();
+        setTimeout(endGame, 5000); //code was added by me to delay endgame by 5 seconds
+
     }
     if (correct) {
         incrementCorrectScore();
@@ -227,10 +226,11 @@ function endGame() {
             <br>
             Click restart to retry
             `;
-    //* setTimeout(myFunction, 3000);
+    //* setTimeout(myFunction, 5000);
+    setTimeout(endGame, 5000);
     setTimeout(() => {
-        checkAnswer();
-    }, 3000);
+        endGame();
+    }, 5000);
     return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
