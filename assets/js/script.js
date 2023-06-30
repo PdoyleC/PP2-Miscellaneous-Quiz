@@ -8,6 +8,7 @@ const nextBut = document.getElementById('next-btn');
 const timershow = document.getElementById('timer-btn');
 const scoresshow = document.getElementById('scores-btn');
 const scoresinshow = document.getElementById('scoresin-btn');
+const finalscoresinshow = document.getElementById('finalscoresin-btn');
 const clicksshow = document.getElementById('clicks-btn');
 const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-div');
@@ -222,5 +223,11 @@ function endGame() {
     setTimeout(() => {
         checkAnswer();
     }, 3000);
-    return window.location.assign("quizover.html");
+    //*  return window.location.assign("quizover.html");
+    sec = 2000;
+    timershow.classList.add('hide');
+    scoresshow;
+    scoresinshow.classList.add('hide');
+    clicksshow.classList.add('hide');
+    finalscoresinshow.classList.remove('hide');
 }
