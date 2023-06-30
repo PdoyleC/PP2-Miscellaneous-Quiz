@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything';
+    document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything 3333';
+    document.getElementById('questions-area1').innerText = 'Congratulations ${myName}. you have 222222 completed the Quiz';
+    document.getElementById('questions-area1').innerHTML = `Congratulations ${myName}.  you have 222222 completed the Quiz'. Thank you for playing this Quiz,`;
+    playAgain.classList.remove('hide');
 });
 
 //variables
@@ -16,10 +19,13 @@ const quizoverDiv = document.getElementById('quizover-div');
 const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
+const questionArea1 = document.getElementById('questions-area1');
 const answersArea = document.getElementById('answer-choice');
+const quizsection = document.getElementById('quiz-section');
 const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
 let myLabel = document.getElementById('myLabel');
+let myName = document.getElementById('myName');
 let form = document.getElementById('form');
 let finishText = document.getElementById('finish-text-score');
 let shuffledQuestions; //hold the questions that are random
@@ -225,7 +231,7 @@ function endGame() {
     setTimeout(() => {
         checkAnswer();
     }, 3000);
-    //*  return window.location.assign("quizover.html");
+    return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
