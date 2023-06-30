@@ -50,7 +50,7 @@ var time = setInterval(myTimer, 1000);
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec < 0) {
+    if (sec < -1) { // minus 1 is used for the seconds to get to zero
         clearInterval(time);
         alert("You are out of Time, The Quiz is over!! :(");
         endGame();
@@ -84,7 +84,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 2000; //added so there is 20 sec per question currently at 2000 to test code and correct css style
+    sec = 20; //added so there is 20 sec per question currently at 2000 to test code and correct css style
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //added to increment number of question completed
@@ -101,7 +101,7 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 2000; //added so there is 20 sec per question
+    sec = 20; //added so there is 20 sec per question
     letsGo.classList.add('hide');
 
     quizRules.classList.add('hide');
