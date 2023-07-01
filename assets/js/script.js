@@ -26,6 +26,7 @@ let myLabel = document.getElementById('myLabel');
 let myName = document.getElementById('myName');
 const form = document.getElementById('form');
 let finishText = document.getElementById('finish-text-score');
+let ruleText = document.getElementById('rule-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
 let currentCorrectScore = 0;
@@ -43,7 +44,7 @@ quizRules.addEventListener('click', function () {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     rulesDiv.classList.remove('hide');
-    finishText.classList.add('hide');
+    ruleText.classList.add('hide');
     closeBtn.addEventListener('click', reset);
     console.log(quizRules);
 });
@@ -82,8 +83,8 @@ submit.addEventListener('click', function () {
         finishText.classList.add('hide');
 
     } else {
-        finishText.classList.remove('hide');
-        document.getElementById('finish-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`;
+        ruleText.classList.remove('hide');
+        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`;
     }
 
 });
@@ -166,7 +167,6 @@ function defaultState() {
     }
 }
 
-//********************************************************************************************************************************************* */
 /**checks user answer and increments score if correct
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
@@ -185,8 +185,9 @@ function checkAnswer(event) {
         scoresinshow.classList.add('hide');
         clicksshow.classList.add('hide');
         timershow.classList.add('hide');
+        questionCont.classList.add('hide');
         finishText.classList.remove('hide');
-        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.Better luck next time. You have scored ${correct}/ 10. Thank you for taking the Quiz`;
+        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
         // setTimeout(endGameover, 10000);
         
     }
