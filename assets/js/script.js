@@ -188,7 +188,7 @@ function checkAnswer(event) {
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
-        // setTimeout(endGameover, 10000);
+        setTimeout(endGameover, 10000);
         
     }
     if (correct) {
