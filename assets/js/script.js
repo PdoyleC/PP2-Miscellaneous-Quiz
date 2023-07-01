@@ -249,9 +249,9 @@ function timeoutendGame() {
             Click restart to retry
             `;
     //* setTimeout(myFunction, 5 seconds);
-    setTimeout(reset, 5000);
+    setTimeout(restart, 5000);
 
-    // return window.location.assign("quizover.html");
+    // return window.location.assign("toquizover.html");
     sec = 2000;
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
@@ -264,17 +264,7 @@ function timeoutendGame() {
     finishText.classList.add('hide');
 }
 
-function reset() {
-    return window.location.assign("quizover.html");
+function restart() {
+    return window.location.assign("toquizover.html");
 }
 
-
-const myfName = document.getElementById('myName');
-
-form.addEventListener('submitfname', function (e) {
-    e.preventDefault();
-    const firstNameValue = myfName.value;
-
-    localStorage.setItem('first-name', firstNameValue);
-
-});
