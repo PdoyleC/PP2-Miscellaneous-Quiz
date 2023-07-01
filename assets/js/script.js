@@ -166,7 +166,7 @@ function defaultState() {
     }
 }
 
-
+//********************************************************************************************************************************************* */
 /**checks user answer and increments score if correct
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
@@ -180,9 +180,15 @@ function checkAnswer(event) {
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
-    } else {
-        endGame();
-
+    } else { // else end the game and show the score after name input
+        sec = 4000; //added so there is time to read the result        
+        scoresinshow.classList.add('hide');
+        clicksshow.classList.add('hide');
+        timershow.classList.add('hide');
+        finishText.classList.remove('hide');
+        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.Better luck next time. You have scored ${CorrectScore}/ 10. Thank you for taking the Quiz`;
+        
+        
     }
     if (correct) {
         incrementCorrectScore();
@@ -190,6 +196,7 @@ function checkAnswer(event) {
         incrementWrongAnswer();
     }
 }
+
 
 function setStatusClass(element, correct) {
     clearStatusClass(element);
