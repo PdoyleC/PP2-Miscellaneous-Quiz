@@ -181,7 +181,7 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else {
-        setTimeout(endGame, 5000); //code was added by me to delay endgame by 5 seconds
+        endGame();
 
     }
     if (correct) {
@@ -226,11 +226,6 @@ function endGame() {
             <br>
             Click restart to retry
             `;
-    //* setTimeout(myFunction, 3 seconds);
-    setTimeout(endGame, 3000);
-
-    return window.location.assign("quizover.html");
-    sec = 2000;
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
@@ -240,6 +235,8 @@ function endGame() {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
+    setTimeout(endGameover, 5000); //* setTimeout(myFunction, 5 seconds after timer and progress is removed);
+
 }
 
 function timeoutendGame() {
@@ -248,8 +245,6 @@ function timeoutendGame() {
             <br>
             Click restart to retry
             `;
-    //* setTimeout(myFunction, 5 seconds);
-    setTimeout(restart, 5000);
 
     // return window.location.assign("toquizover.html");
     sec = 2000;
@@ -262,9 +257,15 @@ function timeoutendGame() {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
+    //* setTimeout(myFunction, 5 seconds);
+    setTimeout(restart, 5000);
 }
 
 function restart() {
     return window.location.assign("toquizover.html");
+}
+
+function endGameover() {
+    return window.location.assign("quizover.html");
 }
 
