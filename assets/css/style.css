@@ -68,6 +68,17 @@ body {
     background: white;
 }
 
+#rule-text-score {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ff3535;
+    font-weight: bold;
+}
+
 #finish-text-score {
     text-align: left;
     font-size: 18px;
@@ -78,6 +89,7 @@ body {
     background: #ff3535;
     font-weight: bold;
 }
+
 
 /*scoring area*/
 
@@ -193,13 +205,6 @@ body {
     gap: 15px;
     margin: 5px auto;
     flex-direction: column;
-}
-
-#finish-text-score {
-    text-align: center;
-    font-size: 15px;
-    margin: auto;
-    padding-bottom: 20px;
 }
 
 button {

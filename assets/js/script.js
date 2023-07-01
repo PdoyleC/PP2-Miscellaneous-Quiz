@@ -186,8 +186,8 @@ function checkAnswer(event) {
         clicksshow.classList.add('hide');
         timershow.classList.add('hide');
         finishText.classList.remove('hide');
-        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.Better luck next time. You have scored ${CorrectScore}/ 10. Thank you for taking the Quiz`;
-        
+        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.Better luck next time. You have scored ${correct}/ 10. Thank you for taking the Quiz`;
+        // setTimeout(endGameover, 10000);
         
     }
     if (correct) {
