@@ -226,7 +226,7 @@ function endGame() {
             <br>
             Click restart to retry
             `;
-    timershow.classList.add('hide');
+    timershow.classList.add('hide');  
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');
@@ -239,7 +239,7 @@ function endGame() {
 
 }
 
-function timeoutendGame() {
+function timeoutendGame() {  //code was added by me for quiz timing out
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
             <br>
@@ -261,11 +261,11 @@ function timeoutendGame() {
     setTimeout(restart, 5000);
 }
 
-function restart() {
+function restart() { //code was added by me for completeing the quiz
     return window.location.assign("toquizover.html");
 }
 
-function endGameover() {
+function endGameover() { //code was added by me for the quiz timing out
     return window.location.assign("quizover.html");
 }
 
