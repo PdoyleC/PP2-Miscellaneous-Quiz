@@ -24,7 +24,7 @@ const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
 let myLabel = document.getElementById('myLabel');
 let myName = document.getElementById('myName');
-let form = document.getElementById('form');
+const form = document.getElementById('form');
 let finishText = document.getElementById('finish-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
@@ -58,7 +58,7 @@ function myTimer() {
     if (sec < -1) { // minus 1 added by me and is used for the seconds to get to zero
         clearInterval(time);
         alert("You are out of Time, The Quiz is over!! :(");
-        endGame();
+        timeoutendGame();
     }
 }
 
@@ -222,24 +222,59 @@ function incrementWrongAnswer() {
 
 function endGame() {
     document.getElementById('questions-area').innerHTML = `
-            <strong><em>Quiz Of Everything!</em></strong>
+            <strong><em>Congratulations you have completed the Quiz!</em></strong>
             <br>
             Click restart to retry
             `;
-    //* setTimeout(myFunction, 5000);
-    setTimeout(endGame, 5000);
-    setTimeout(() => {
-        endGame();
-    }, 5000);
+    //* setTimeout(myFunction, 3 seconds);
+    setTimeout(endGame, 3000);
+
     return window.location.assign("quizover.html");
     sec = 2000;
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');
-    finalscoresinshow.classList.remove('hide');
+    finalscoresinshow.classList.add('hide');
     quizRules.classList.add('hide');
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
 }
+
+function timeoutendGame() {
+    document.getElementById('questions-area').innerHTML = `
+            <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
+            <br>
+            Click restart to retry
+            `;
+    //* setTimeout(myFunction, 5 seconds);
+    setTimeout(reset, 5000);
+
+    // return window.location.assign("quizover.html");
+    sec = 2000;
+    timershow.classList.add('hide');
+    answersArea.classList.add('hide');
+    scoresinshow.classList.add('hide');
+    clicksshow.classList.add('hide');
+    finalscoresinshow.classList.add('hide');
+    quizRules.classList.add('hide');
+    infoFront.classList.add('hide');
+    form.classList.add('hide');
+    finishText.classList.add('hide');
+}
+
+function reset() {
+    return window.location.assign("quizover.html");
+}
+
+
+const myfName = document.getElementById('myName');
+
+form.addEventListener('submitfname', function (e) {
+    e.preventDefault();
+    const firstNameValue = myfName.value;
+
+    localStorage.setItem('first-name', firstNameValue);
+
+});
