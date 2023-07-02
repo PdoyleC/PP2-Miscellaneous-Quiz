@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('questions-area1').innerText = 'Congratulations You have completed the Quiz';
 });
 
+
+
 //variables
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
@@ -13,13 +15,10 @@ const finalscoresinshow = document.getElementById('finalscoresin-btn');
 const clicksshow = document.getElementById('clicks-btn');
 const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-div');
-const quizoverDiv = document.getElementById('quizover-div');
 const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
-const questionArea1 = document.getElementById('questions-area1');
 const answersArea = document.getElementById('answer-choice');
-const quizsection = document.getElementById('quiz-section');
 const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
 let myLabel = document.getElementById('myLabel');
@@ -29,9 +28,6 @@ let finishText = document.getElementById('finish-text-score');
 let ruleText = document.getElementById('rule-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
-let currentCorrectScore = 0;
-let currentIncorrectScore = 0;
-let score; // holds score
 var sec = 1800; //this gives time to start the quiz
 var clicks = 0;
 
