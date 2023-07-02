@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //variables
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
+const restartBut = document.getElementById('restart-btn');
 const timershow = document.getElementById('timer-btn');
 const scoresshow = document.getElementById('scores-btn');
 const scoresinshow = document.getElementById('scoresin-btn');
@@ -182,6 +183,7 @@ function checkAnswer(event) {
         timershow.classList.add('hide');
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
+        restartBut.classList.remove('hide');
         document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
         setTimeout(endGameover, 10000);
 
@@ -246,7 +248,7 @@ function timeoutendGame() {  //code was added by me for quiz timing out
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
             <br>
-            Click restart to retry
+            
             `;
 
     // return window.location.assign("toquizover.html");
