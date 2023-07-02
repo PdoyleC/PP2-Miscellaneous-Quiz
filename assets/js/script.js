@@ -44,7 +44,6 @@ quizRules.addEventListener('click', function () {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     rulesDiv.classList.remove('hide');
-    ruleText.classList.add('hide');
     closeBtn.addEventListener('click', reset);
     console.log(quizRules);
 });
@@ -80,7 +79,7 @@ submit.addEventListener('click', function () {
     if (myName) {
 
         letsGo.classList.remove('hide');
-        finishText.classList.add('hide');
+        ruleText.classList.add('hide'); // code added to remove OOPS message whe submit is entered.
 
     } else {
         ruleText.classList.remove('hide');
@@ -189,7 +188,7 @@ function checkAnswer(event) {
         finishText.classList.remove('hide');
         document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
         setTimeout(endGameover, 10000);
-        
+
     }
     if (correct) {
         incrementCorrectScore();
@@ -234,7 +233,7 @@ function endGame() {
             <br>
             Click restart to retry
             `;
-    timershow.classList.add('hide');  
+    timershow.classList.add('hide');
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
     clicksshow.classList.add('hide');

@@ -86,6 +86,24 @@ In the future I'd like to add smaller indicators, to show which question was sel
 ## Structure and Skeleton
 
 ### Wireframes
+### Programmes used
+- Balsamiq
+    - For the wireframes
+- Git
+    - For version control, commiting, and pushing to Github
+- Github
+    - For storing the repository.
+- Codeanywhere
+    - IDE used to code the website.
+- Chrome developer tools
+    - for checking compatibilty, debugging, styling, troubleshooting and editing code.
+- Am I responsive
+    - Used to test responsiveness of the website of the different screen sizes.
+- Google Fonts
+    - For the font stlye.
+- favicon.io
+    - For the tab icon.
+
 
 ### Home Page
 
