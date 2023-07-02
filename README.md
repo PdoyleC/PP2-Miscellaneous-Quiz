@@ -140,6 +140,7 @@ In the future I'd like to add smaller indicators, to show which question was sel
 </details>
 
 ### 404 ERROR
+![404 error Page](documentation/404errorpage.jpg)
 
 [Back to contents](#contents)
 
