@@ -86,6 +86,7 @@ In the future I'd like to add smaller indicators, to show which question was sel
 ## Structure and Skeleton
 
 ### Wireframes
+
 ### Programmes used
 * Balsamiq
     - For the wireframes
@@ -97,14 +98,14 @@ In the future I'd like to add smaller indicators, to show which question was sel
     - IDE used to code the website.
 * Chrome developer tools
     - for checking compatibilty, debugging, styling, troubleshooting and editing code.
+* jigsaw.w3.org / validator.w3.org / jshint.com
+    - For code validation of HTML, CSS & JavaScript
 * Am I responsive
     - Used to test responsiveness of the website of the different screen sizes.
 * Google Fonts
     - For the font stlye.
 * favicon.io
     - For the tab icon.
-* jigsaw.w3.org / validator.w3.org / 
-    - for code validation 
 
 
 ### Home Page
@@ -162,7 +163,7 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 ### Code
 
 - This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
-- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/).
+- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/). Code was added to, by implementing a timer, progress counter, user name.
 - Code institute for course material and content for correct and incorrect scoring.
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
 - Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.
