@@ -313,8 +313,29 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 320px) {
     .scores {
         padding: 0;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .score-area {
+        font-size: 1px;
+    }
+
+    .scoresin-btn {
+        font-size: 1rem;
+    }
+
+    .scores-btn {
+        font-size: 1rem;
+    }
+
+    .quiz-section {
+        width: 95%;
+
     }
 }
