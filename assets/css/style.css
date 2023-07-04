@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
 
-*,
-*::before,
-::after {
-    box-sizing: border-box;
-    font-family: 'Lora';
-}
 
 body {
     font-family: "Lora", sans-serif;
@@ -309,10 +303,13 @@ button:hover {
         font-size: 0.9rem;
     }
 
+    #restartplay-btn {
+        width: 18%;
+
+    }
+
     .btn-flex {
         height: 10%;
-        width: ;
-
     }
 
     .info {

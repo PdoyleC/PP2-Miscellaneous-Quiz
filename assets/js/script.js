@@ -30,7 +30,7 @@ let finishText = document.getElementById('finish-text-score');
 let ruleText = document.getElementById('rule-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
-var sec = 1800; //this gives time to start the quiz
+var sec = 18000; //this gives time to start the quiz
 var clicks = 0;
 
 
@@ -72,12 +72,12 @@ function reset() {
     infoFront.classList.remove('hide');
 }
 
-submit.addEventListener('click', function () {
+submit.addEventListener('click', function () { //code was added by me to check for user name
     myName = document.getElementById('myName').value;
     if (myName) {
 
         letsGo.classList.remove('hide');
-        ruleText.classList.add('hide'); // code added to remove OOPS message whe submit is entered.
+        ruleText.classList.add('hide'); // code added to remove OOPS message when submit is entered.
 
     } else {
         ruleText.classList.remove('hide');
@@ -89,7 +89,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 2000; //code was added by me so there is 20 sec per question, at 2000 to test for small screen
+    sec = 20; //code was added by me so there is 20 sec per question
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -106,7 +106,7 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 2000; //code was added by me so there is 20 sec per question at 2000 to test for small screen
+    sec = 20; //code was added by me so there is 20 sec per question
     letsGo.classList.add('hide'); console.log("start btn gone");
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text
@@ -188,7 +188,7 @@ function checkAnswer(event) {
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         restartBut.classList.add('hide');
-        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
+        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}. Thank you for taking the Quiz`;
         setTimeout(endGameover, 5000);
 
     }
