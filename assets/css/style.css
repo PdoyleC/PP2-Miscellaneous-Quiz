@@ -191,7 +191,7 @@ body {
 
 /*answer section*/
 
-#answer-choice {
+.answer-choice {
     display: flex;
     flex-direction: column;
     align-items: center;

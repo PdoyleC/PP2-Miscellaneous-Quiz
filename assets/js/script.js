@@ -19,7 +19,7 @@ const rulesDiv = document.getElementById('rules-guide');
 const infoFront = document.getElementById('info');
 const questionCont = document.getElementById('questions-cont');
 const questionArea = document.getElementById('questions-area');
-const answersArea = document.getElementById('answer-choice');
+const answersArea = document.getElementsByClassName('answer-choice')[0];
 const closeBtn = document.getElementById('close-btn');
 let submit = document.getElementById('submit');
 let myLabel = document.getElementById('myLabel');
@@ -88,7 +88,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 20; //code was added by me so there is 20 sec per question currently at 2000 to test code and correct css style
+    sec = 2000; //code was added by me so there is 20 sec per question currently at 2000 to test code and correct css style
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -105,8 +105,8 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 20; //code was added by me so there is 20 sec per question
-    letsGo.classList.add('hide');
+    sec = 2000; //code was added by me so there is 20 sec per question currently at 2000 to test code and correct css style
+    letsGo.classList.add('hide'); console.log("start btn gone");
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text
     rulesDiv.classList.add('hide'); //code was added by me to hide rules and text
@@ -114,10 +114,12 @@ function runGame() {
     submit.classList.add('hide'); //code was added by me to hide rules and text
     myLabel.classList.add('hide'); //code was added by me to hide rules and text
     infoFront.classList.add('hide'); //code was added by me to hide rules and text
-    answersArea.classList.remove('hide');
-    timershow.classList.remove('hide'); //code was added by me to show timer
-    scoresshow.classList.remove('hide'); //code was added by me to show score
-    scoresinshow.classList.remove('hide'); //code was added by me to show score
+    console.log("infoFront area here");
+    // // answersArea.classLiadd('hide');
+    console.log("answers area here"); // log console added to test code
+    timershow.classList.remove('hide'); console.log("my timer function triggered"); //code was added by me to show timer . log console added to test code
+    scoresshow.classList.remove('hide'); console.log("my score function triggered"); //code was added by me to show score. log console added to test code
+    scoresinshow.classList.remove('hide'); console.log("my incorrect score function triggered"); //code was added by me to show score. log console added to test code
     clicksshow.classList.remove('hide'); //code was added by me to show progress
     shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
@@ -179,13 +181,14 @@ function checkAnswer(event) {
     } else { // else end the game and show the score after name input
         sec = 4000; //added so there is time to read the result        
         scoresinshow.classList.add('hide');
+        answersArea.classList.add('hide');
         clicksshow.classList.add('hide');
         timershow.classList.add('hide');
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         restartBut.classList.add('hide');
         document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${correct}/ 10. Thank you for taking the Quiz`;
-        setTimeout(endGameover, 5000);
+        setTimeout(endGameover, 55000);
 
     }
     if (correct) {

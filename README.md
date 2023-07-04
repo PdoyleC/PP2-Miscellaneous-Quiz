@@ -14,6 +14,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### User Feedback
 
+- Liked the questions, and would nice if there was dificulty level or easy mediun or hard level.
+-
+
 ## UX
 
 ## Strategy and Scope
@@ -88,25 +91,25 @@ In the future I'd like to add smaller indicators, to show which question was sel
 ### Wireframes
 
 ### Programmes used
-* Balsamiq
-    - For the wireframes
-* Git
-    - For version control, commiting, and pushing to Github
-* Github
-    - For storing the repository.
-* Codeanywhere
-    - IDE used to code the website.
-* Chrome developer tools
-    - for checking compatibilty, debugging, styling, troubleshooting and editing code.
-* jigsaw.w3.org / validator.w3.org / jshint.com
-    - For code validation of HTML, CSS & JavaScript
-* Am I responsive
-    - Used to test responsiveness of the website of the different screen sizes.
-* Google Fonts
-    - For the font stlye.
-* favicon.io
-    - For the tab icon.
 
+- Balsamiq
+  - For the wireframes
+- Git
+  - For version control, commiting, and pushing to Github
+- Github
+  - For storing the repository.
+- Codeanywhere
+  - IDE used to code the website.
+- Chrome developer tools
+  - for checking compatibilty, debugging, styling, troubleshooting and editing code.
+- jigsaw.w3.org / validator.w3.org / jshint.com
+  - For code validation of HTML, CSS & JavaScript
+- Am I responsive
+  - Used to test responsiveness of the website of the different screen sizes.
+- Google Fonts
+  - For the font stlye.
+- favicon.io
+  - For the tab icon.
 
 ### Home Page
 
@@ -140,6 +143,7 @@ In the future I'd like to add smaller indicators, to show which question was sel
 </details>
 
 ### 404 ERROR
+
 ![404 error Page](documentation/404errorpage.jpg)
 
 [Back to contents](#contents)
