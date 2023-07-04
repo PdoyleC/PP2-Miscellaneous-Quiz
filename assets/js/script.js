@@ -88,7 +88,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 5; //code was added by me so there is 20 sec per question currently at 5 to test code 
+    sec = 20; //code was added by me so there is 20 sec per question 
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -105,7 +105,7 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 5; //code was added by me so there is 20 sec per question currently at 5 to test code 
+    sec = 20; //code was added by me so there is 20 sec per question 
     letsGo.classList.add('hide'); console.log("start btn gone");
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text
