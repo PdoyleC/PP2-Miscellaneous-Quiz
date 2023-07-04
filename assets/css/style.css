@@ -324,6 +324,11 @@ button:hover {
 }
 
 @media screen and (max-width: 320px) {
+
+    body {
+        background-image: url("../images/miscq320x480.jpg");
+    }
+
     .scores {
         padding: 0;
     }
