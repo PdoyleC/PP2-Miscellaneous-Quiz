@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything';
     document.getElementById('questions-area1').innerText = 'Congratulations You have completed the Quiz';
+    document.getElementById('questions-area2').innerText = 'Congratulations you have completed the Quiz Click restart to retry';
 });
 
 
@@ -88,7 +89,7 @@ submit.addEventListener('click', function () {
 letsGo.addEventListener('click', runGame);
 
 nextBut.addEventListener('click', () => {
-    sec = 20; //code was added by me so there is 20 sec per question 
+    sec = 2000; //code was added by me so there is 20 sec per question, at 2000 to test for small screen
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -105,7 +106,7 @@ nextBut.addEventListener('click', () => {
  * moves onto the first question
  */
 function runGame() {
-    sec = 20; //code was added by me so there is 20 sec per question 
+    sec = 2000; //code was added by me so there is 20 sec per question at 2000 to test for small screen
     letsGo.classList.add('hide'); console.log("start btn gone");
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text
