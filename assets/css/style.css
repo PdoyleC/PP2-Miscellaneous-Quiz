@@ -287,13 +287,11 @@ button:hover {
 
 /*media queries*/
 
-@media screen and (max-width: 816px) {
-    .scores {
-        padding: 10px;
-    }
-}
-
 @media screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/miscq76x10.jpg");
+    }
+
     .quiz-section {
         width: 85%;
         padding: 17.5%;
