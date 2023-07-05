@@ -175,7 +175,7 @@ function checkAnswer(event) {
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
     // and increments score if correct
-    if (correct) score++;
+    if (correct) score++; // code added by me to increment score and display at end of quiz.
 
     setStatusClass(document.body, correct);
     Array.from(answersArea.children).forEach(button => {
@@ -192,8 +192,23 @@ function checkAnswer(event) {
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         restartBut.classList.add('hide');
-        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score}. Thank you for taking the Quiz`;
-        setTimeout(endGameover, 5000);
+        if (score >= 8) {   // if else code added by me to and display at end of quiz.
+
+            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+        } else if (score >= 6 && score < 8) {
+
+            document.getElementById('finish-text-score').innerHTML = `Amazing work ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+        } else if (score >= 4 && score < 6) {
+
+            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+        } else {
+
+            document.getElementById('finish-text-score').innerHTML = `Good try ${myName}. It's all about trying. You have scored ${score}. Thank you for playing this Quiz,`;
+
+
+        }
+        // document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score} out 10. Thank you for taking the Quiz`; // code added by me to and display at end of quiz.
+        // setTimeout(endGameover, 8000);   comment added to test if else statement
     }
 
     if (correct) {
