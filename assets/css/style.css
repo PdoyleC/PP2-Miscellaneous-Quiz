@@ -394,8 +394,9 @@ button:hover {
         font-size: 0.8rem;
     }
 
-    .quiz-section {
-        width: 95%;
+    #restartplay-btn {
+        width: 21%;
+        margin: 18px;
 
     }
 }
