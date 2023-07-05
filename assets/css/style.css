@@ -287,6 +287,17 @@ button:hover {
 
 /*media queries*/
 
+@media screen and (min-width: 1920px) {
+
+    body {
+        align-items: center;
+    }
+
+
+}
+
+
+
 @media screen and (max-width: 768px) {
     body {
         background-image: url("../images/miscq76x10.jpg");
