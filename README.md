@@ -35,6 +35,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - The players score is visible on the screen under the quiz.
 - There is a countdown timer which end the quiz after 20 seconds if the question isn't answered,which appears after the start button is pressed.
 - There is a progress counter which appears after the start button is pressed.
+- Rules can be seen by pressing the Rules button.
 
 <details>
 <summary>Features Image</summary>
@@ -42,7 +43,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ![Features Home Image](documentation/features.jpg)
 ![Features Questions Image](documentation/features1.jpg)
 ![Background TimeOut Image](documentation/features2.jpg)
-![Background QuizOver Image](documentation/features3.jpg)
 
 </details>
 
@@ -73,7 +73,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
--
+- I'd like to implement an end of quiz statement in relation to the score, i.e. if the score was below 4 there would be a message to say something along the lines of "more study is needed".
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
 
