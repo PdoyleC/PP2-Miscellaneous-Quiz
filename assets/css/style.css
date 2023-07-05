@@ -375,17 +375,10 @@ button:hover {
         display: table-row
     }
 
-    .scoresin-btn {
-        font-size: 0.7rem;
-    }
-
-    .scores-btn {
-        font-size: 0.8rem;
-    }
-
     .clicks-btn,
     .timer-btn,
-    .scores-btn {
+    .scores-btn,
+    .scoresin-btn {
         font-size: 0.8rem;
     }
 
