@@ -14,7 +14,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### User Feedback
 
-- Liked the questions, and would nice if there was dificulty level or easy mediun or hard level.
+- Liked the questions, and would nice if there was dificulty level like easy mediun or hard level.
 -
 
 ## UX
@@ -161,31 +161,20 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 ### Content
 
 - Questions in relation to Always Sunny were found at [Always Sunny link](https://www.joe.ie/movies-tv/quiz-can-beat-gang-get-1520-always-sunny-philadelphia-quiz-576503).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://www.faber.co.uk/journal/quizzes/qi-quiz/).
-
 - Questions in relation to Rick and Morty were found at [Rick and Morty link](https://editorial.rottentomatoes.com/article/ultimate-rick-and-morty-quiz/).
-
 - Questions in relation to Astronomy were found at [Astronomy link](https://thoughtcatalog.com/january-nelson/2021/10/astronomy-trivia/).
-
 - Questions in relation to Predator rivia were found at [Predator Trivia link](https://www.usefultrivia.com/movie_trivia/predator_trivia.html).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#quiz-templates).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://www.cosmopolitan.com/uk/worklife/a32433256/best-hard-general-knowledge-quiz-questions/).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](http://www.freepubquiz.co.uk/ireland-quiz.html).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://www.beelovedcity.com/ireland-quiz).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://www.mylondon.news/news/zone-1-news/30-tough-pop-music-quiz-18302193).
-
 - Questions in relation to general Knowledge were found at [General Knowledge link](https://thisisgalway.ie/quiz/the-irish-music-quiz-1/).
 
 ### Code
 
 - This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
-- Code Inspired by fellow Code Institute students Lisa Tinmurth [Github](https://mrst12.github.io/Quizzical/). Code was added to, by implementing a timer, progress counter, user name.
 - Code institute for course material and content for correct and incorrect scoring.
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
 - Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.

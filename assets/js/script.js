@@ -81,7 +81,7 @@ submit.addEventListener('click', function () { //code was added by me to check f
 
     } else {
         ruleText.classList.remove('hide');
-        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added to ask for username
+        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
 
 });
@@ -127,6 +127,7 @@ function runGame() {
     clicks += 1;    //code was added by me to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
     questionCont.classList.remove('hide');
+    score = 0;
     getNextQuestion();
 }
 
@@ -173,6 +174,9 @@ function defaultState() {
 function checkAnswer(event) {
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
+    // and increments score if correct
+    if (correct) score++;
+
     setStatusClass(document.body, correct);
     Array.from(answersArea.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -188,10 +192,10 @@ function checkAnswer(event) {
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         restartBut.classList.add('hide');
-        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}. Thank you for taking the Quiz`;
+        document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score}. Thank you for taking the Quiz`;
         setTimeout(endGameover, 5000);
-
     }
+
     if (correct) {
         incrementCorrectScore();
     } else {
