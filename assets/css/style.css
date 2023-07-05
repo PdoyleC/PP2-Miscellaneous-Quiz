@@ -329,35 +329,69 @@ button:hover {
         font-size: 1rem;
     }
 
-    .score-area {
+    .scoresin-btn {
+        font-size: 0.9rem;
+    }
+
+    .scores-btn {
         font-size: 1rem;
     }
+
 }
 
 @media screen and (max-width: 320px) {
 
     body {
+        margin: 8px;
         background-image: url("../images/miscq320x480.jpg");
+    }
+
+    #rules-guide {
+        font-size: 11px;
+        padding: 10px;
     }
 
     .scores {
         padding: 0;
     }
 
+    #info {
+        font-size: 0.7rem;
+        padding: 0;
+
+    }
+
     button {
         font-size: 1rem;
     }
 
+    .navigation {
+        padding: 0px;
+        margin: -10px;
+    }
+
     .score-area {
         font-size: 1px;
+        display: table-row
     }
 
     .scoresin-btn {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .scores-btn {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .clicks-btn,
+    .timer-btn,
+    .scores-btn {
+        font-size: 0.8rem;
+    }
+
+    #clicks,
+    #timer {
+        font-size: 0.8rem;
     }
 
     .quiz-section {
