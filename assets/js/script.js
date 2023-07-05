@@ -184,7 +184,7 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
-        // sec = 4000; //added so there is time to read the result        
+        var sec = 18000; //added so there is time to read the result 
         scoresinshow.classList.add('hide');
         answersArea.classList.add('hide');
         clicksshow.classList.add('hide');
@@ -192,23 +192,23 @@ function checkAnswer(event) {
         questionCont.classList.add('hide');
         finishText.classList.remove('hide');
         restartBut.classList.add('hide');
-        if (score >= 8) {   // if else code added by me to and display at end of quiz.
+        if (score >= 8) {   // if else code added by me to display at end of quiz.
 
-            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
         } else if (score >= 6 && score < 8) {
 
-            document.getElementById('finish-text-score').innerHTML = `Amazing work ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
         } else if (score >= 4 && score < 6) {
 
-            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score}. Thank you for playing this Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
         } else {
 
-            document.getElementById('finish-text-score').innerHTML = `Good try ${myName}. It's all about trying. You have scored ${score}. Thank you for playing this Quiz,`;
+            document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score}. Thank you for taking the Quiz,`;
 
 
         }
         // document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score} out 10. Thank you for taking the Quiz`; // code added by me to and display at end of quiz.
-        // setTimeout(endGameover, 8000);   comment added to test if else statement
+        setTimeout(endGameover, 8000);
     }
 
     if (correct) {
@@ -275,6 +275,9 @@ function timeoutendGame() {  //code was added by me for quiz timing out
             `;
 
     // sec = 5;
+    finishText.classList.remove('hide');
+    document.getElementById('finish-text-score').innerHTML = `You may work faster ${myName}.You have scored ${score} out 10. But your TIME ran out`; // code added by me to and display at end of quiz.
+
     timershow.classList.add('hide'); console.log("timershow 1/9 triggered");
     answersArea.classList.add('hide'); console.log("answersArea 2/9  triggered");
     scoresinshow.classList.add('hide'); console.log("scoresinshow 3/9  triggered");

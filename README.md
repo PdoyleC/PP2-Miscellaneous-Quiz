@@ -15,7 +15,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ### User Feedback
 
 - Liked the questions, and would nice if there was dificulty level like easy mediun or hard level.
--
+- Have a category for different question, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
 
 ## UX
 
@@ -111,6 +111,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Testing and Validation
+
+- Testing was done in chrome developer, console.log where placed into JS to see which function were being completed and where it was stopping as the code hiding the answer section.
+  ![Troubleshooting JS Image](documentation/troubleshjsconsole.jpg)
 
 ### Code Validation
 
