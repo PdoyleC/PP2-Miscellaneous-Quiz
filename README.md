@@ -56,15 +56,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 </details>
 
-### Footer
-
 [Back to contents](#contents)
 
 ## Design
-
-### Color Scheme
-
-### Color Contrast
 
 ### Fonts
 
@@ -79,8 +73,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
-In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
-![Future Ideas Image](documentation/futureidea.jpg)
+-
+- In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
+  ![Future Ideas Image](documentation/futureidea.jpg)
 
 ### Future changes
 
@@ -164,6 +159,28 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 ## Credits
 
 ### Content
+
+- Questions in relation to Always Sunny were found at [Always Sunny link](https://www.joe.ie/movies-tv/quiz-can-beat-gang-get-1520-always-sunny-philadelphia-quiz-576503).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://www.faber.co.uk/journal/quizzes/qi-quiz/).
+
+- Questions in relation to Rick and Morty were found at [Rick and Morty link](https://editorial.rottentomatoes.com/article/ultimate-rick-and-morty-quiz/).
+
+- Questions in relation to Astronomy were found at [Astronomy link](https://thoughtcatalog.com/january-nelson/2021/10/astronomy-trivia/).
+
+- Questions in relation to Predator rivia were found at [Predator Trivia link](https://www.usefultrivia.com/movie_trivia/predator_trivia.html).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#quiz-templates).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://www.cosmopolitan.com/uk/worklife/a32433256/best-hard-general-knowledge-quiz-questions/).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](http://www.freepubquiz.co.uk/ireland-quiz.html).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://www.beelovedcity.com/ireland-quiz).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://www.mylondon.news/news/zone-1-news/30-tough-pop-music-quiz-18302193).
+
+- Questions in relation to general Knowledge were found at [General Knowledge link](https://thisisgalway.ie/quiz/the-irish-music-quiz-1/).
 
 ### Code
 
