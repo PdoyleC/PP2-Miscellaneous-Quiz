@@ -59,6 +59,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Design
+* The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in tsome jugs and bowls in the image.
+
+![Background Image](documentation/eyedropper.png)
 
 ### Fonts
 
