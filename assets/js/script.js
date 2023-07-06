@@ -233,7 +233,7 @@ function checkAnswer(event) {
 
         }
         // document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score} out 10. Thank you for taking the Quiz`; // code added by me to and display at end of quiz.
-        setTimeout(endGameover, 5000); //comment out to test score page at end of quiz
+        setTimeout(endGameover, 10000); //comment out to test score page at end of quiz
     }
 
     if (correct) {
