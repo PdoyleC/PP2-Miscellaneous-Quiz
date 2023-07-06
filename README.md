@@ -73,7 +73,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
-- I'd like to implement an end of quiz statement in relation to the score, i.e. if the score was below 4 there would be a message to say something along the lines of "more study is needed".
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
 
@@ -179,6 +178,8 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 - This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
 - Code institute for course material and content for correct and incorrect scoring.
+- Code inspired from CI student Jose Maciel [Link to zemaciel github](https://zemaciel.github.io/project-02/index.html).
+- Code inspired from CI student Lisa Tinmurth [Link to mrst12 github](https://mrst12.github.io/Quizzical/).
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
 - Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.
 

@@ -194,16 +194,16 @@ function checkAnswer(event) {
         restartBut.classList.add('hide');
         if (score >= 8) {   // if else code added by me to display at end of quiz.
 
-            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
         } else if (score >= 6 && score < 8) {
 
-            document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
         } else if (score >= 4 && score < 6) {
 
-            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score}. Thank you for taking the Quiz.`;
+            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
         } else {
 
-            document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score}. Thank you for taking the Quiz,`;
+            document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
 
 
         }
@@ -275,9 +275,6 @@ function timeoutendGame() {  //code was added by me for quiz timing out
             `;
 
     // sec = 5;
-    finishText.classList.remove('hide');
-    document.getElementById('finish-text-score').innerHTML = `You may work faster ${myName}.You have scored ${score} out 10. But your TIME ran out`; // code added by me to and display at end of quiz.
-
     timershow.classList.add('hide'); console.log("timershow 1/9 triggered");
     answersArea.classList.add('hide'); console.log("answersArea 2/9  triggered");
     scoresinshow.classList.add('hide'); console.log("scoresinshow 3/9  triggered");
