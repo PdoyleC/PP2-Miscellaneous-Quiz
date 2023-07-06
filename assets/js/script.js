@@ -54,9 +54,7 @@ function showrules() {
     myName.classList.remove('hide');
     closeBtn.addEventListener('click', reset);
 }
-////////////////////////////////////////////////////////
-/////////////
-/////////////
+
 //timer code was added by me to set a time for each question.
 
 var time = setInterval(myTimer, 1000);

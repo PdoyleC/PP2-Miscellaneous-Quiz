@@ -16,6 +16,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - To have a reset or restart button.
 - There will be a choice of answers to choose from.
 - The correct answer will be displayed when the question is answered.
+- For the quiz to be like a timed test, when the time is up the quiz will end. 
 
 ### User Feedback
 
