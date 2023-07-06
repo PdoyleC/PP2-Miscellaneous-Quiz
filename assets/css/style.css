@@ -212,6 +212,7 @@ button {
     font-size: 1.5rem;
 }
 
+
 button:hover {
     background-color: #a0a6fb;
 }
@@ -244,6 +245,16 @@ button:hover {
     width: 12%;
     margin: 8px 0;
     padding: 3px;
+}
+
+.navigationrestart {
+    margin: auto;
+    width: 10%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    font-size: 1.5rem;
 }
 
 @keyframes glowing {
