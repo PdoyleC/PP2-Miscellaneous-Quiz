@@ -37,7 +37,7 @@ var clicks = 0;
 
 
 
-//event listeners
+//event listeners for Start, Rules, Next and submit buttons
 submit.addEventListener('click', subname);
 letsGo.addEventListener('click', runGame);
 quizRules.addEventListener('click', showrules);
@@ -53,21 +53,21 @@ function showrules() {
     closeBtn.addEventListener('click', reset);
 }
 
-//timer code was added by me to set a time for each question
+//timer code was added by me to set a time for each question.
 
 var time = setInterval(myTimer, 1000);
 
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec < -1) { // minus 1 added by me and is used for the seconds to get to zero
+    if (sec < -1) { // minus 1 added by me and is used for the seconds to get to zero.
         clearInterval(time);
         alert("You are out of Time, The Quiz is over!! :(");
         timeoutendGame();
     }
 }
 
-// reset code was added by me to show and hide btns and text
+// reset code was added by me to show and hide the rules text after the close button is pressed in function showrules.
 
 function reset() {
     quizRules.classList.remove('hide');
@@ -79,7 +79,7 @@ function reset() {
     infoFront.classList.remove('hide');
 }
 
-
+// subname code was added by me to enter the user name and then display at the end of the quiz. 
  function subname() {
        myName = document.getElementById('myName').value;
     if (myName) {
@@ -98,9 +98,9 @@ function reset() {
 
 
 
-
+// nextquestcurrquest code is there to increment the current question of the progress counter.
 function nextquestcurrquest() {
-    sec = 20; //code was added by me so there is 20 sec per question, currently at 2000 for testing
+    sec = 20; //code was added by me so there is 20 sec per question.
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -147,10 +147,8 @@ function getNextQuestion() {
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-/**
- * Gets the questions and answers from the array
- * and displays them
- */
+// Gets the questions and answers from the array and displays them
+
 function displayQuestion(question) {
     questionArea.innerText = question.question;
     question.answers.forEach(answer => {
@@ -165,9 +163,8 @@ function displayQuestion(question) {
     });
 }
 
-/**
- * takes out the old answers so new ones can go in
- */
+//takes out the old answers so new ones can go in
+
 function defaultState() {
     nextBut.classList.add('hide');
     while (answersArea.firstChild) {
@@ -256,7 +253,7 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = oldScore + 1;
 }
 
-
+// End game
 function endGame() {
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Congratulations you have completed the Quiz!</em></strong>
@@ -276,14 +273,14 @@ function endGame() {
 
 }
 
+// timeoutendGame code was added by me for when the quiz timer is up the quiz ends it jumps to here. 
 function timeoutendGame() {  //code was added by me for quiz timing out
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
             <br>
             
             `;
-
-    // sec = 5;
+    
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
@@ -292,15 +289,17 @@ function timeoutendGame() {  //code was added by me for quiz timing out
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
-    //* setTimeout(myFunction, 5 seconds);
-    setTimeout(restart, 5000);
+    setTimeout(restart, 5000);//* setTimeout(myFunction, 5 seconds);
 }
 
-function restart() { //code was added by me for completeing the quiz
+
+//code was added by me for completeing the quiz
+function restart() { 
     return window.location.assign("toquizover.html");
 }
 
-function endGameover() { //code was added by me for the quiz timing out
+//code was added by me for the quiz timing out
+function endGameover() {
     return window.location.assign("quizover.html");
 }
 
