@@ -132,18 +132,17 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ### Code Validation
 
  - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
+ - JShint was used to test the the JavaScript code, there were a number of warnings for 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
 <details>
 <summary>Features Image</summary>
 
 ![index HTML](documentation/indexhtmlvalid.png)
 ![Quiz Completed HTML](documentation/quizoverhtmlvalid.png)
 ![Quiz Time Out HTML](documentation/toquizoverhtmlvalid.png)
+![index HTML](documentation/cssvalid.png)
+![JShint Validation Image](documentation/jshwarnings.jpg)
 
 </details>
-
-
-- JShint was used to test the the JavaScript code, there were a number of warnings for 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
-![JShint Validation Image](documentation/jshwarnings.jpg)
 
 ### WAVE
 
