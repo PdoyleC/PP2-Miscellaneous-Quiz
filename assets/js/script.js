@@ -30,6 +30,7 @@ let finishText = document.getElementById('finish-text-score');
 let ruleText = document.getElementById('rule-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
+let score = 0;
 var sec = 18000; //this gives time to start the quiz
 var clicks = 0;
 
@@ -186,6 +187,7 @@ function checkAnswer(event) {
     } else { // else end the game and show the score after name input
         var sec = 18000; //added so there is time to read the result 
         scoresinshow.classList.add('hide');
+        scoresshow.classList.add('hide');
         answersArea.classList.add('hide');
         clicksshow.classList.add('hide');
         timershow.classList.add('hide');
@@ -208,7 +210,7 @@ function checkAnswer(event) {
 
         }
         // document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score} out 10. Thank you for taking the Quiz`; // code added by me to and display at end of quiz.
-        setTimeout(endGameover, 8000);
+        setTimeout(endGameover, 10000); //comment out to test score page at end of quiz
     }
 
     if (correct) {

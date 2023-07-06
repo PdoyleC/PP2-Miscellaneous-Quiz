@@ -115,6 +115,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
   ![Troubleshooting JS Image](documentation/troubleshjsconsole.jpg)
 
 ### Code Validation
+- JShint was used to test the the JavaScript code, there were a number of warnings for 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
+![JShint Validation Image](documentation/jshwarnings.jpg)
 
 ### Lighthouse
 
