@@ -38,14 +38,20 @@ var clicks = 0;
 
 
 //event listeners
-quizRules.addEventListener('click', function () {
+submit.addEventListener('click', subname);
+letsGo.addEventListener('click', runGame);
+quizRules.addEventListener('click', showrules);
+nextBut.addEventListener('click', nextquestcurrquest);
+
+
+
+function showrules() {
     quizRules.classList.add('hide');
     infoFront.classList.add('hide');
     form.classList.add('hide');
     rulesDiv.classList.remove('hide');
     closeBtn.addEventListener('click', reset);
-    console.log(quizRules);
-});
+}
 
 //timer code was added by me to set a time for each question
 
@@ -73,8 +79,9 @@ function reset() {
     infoFront.classList.remove('hide');
 }
 
-submit.addEventListener('click', function () { //code was added by me to check for user name
-    myName = document.getElementById('myName').value;
+
+ function subname() {
+       myName = document.getElementById('myName').value;
     if (myName) {
 
         letsGo.classList.remove('hide');
@@ -86,18 +93,20 @@ submit.addEventListener('click', function () { //code was added by me to check f
         document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
 
-});
+;
+}
 
-letsGo.addEventListener('click', runGame);
 
-nextBut.addEventListener('click', () => {
+
+
+function nextquestcurrquest() {
     sec = 20; //code was added by me so there is 20 sec per question, currently at 2000 for testing
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
 
-});
+}
 
 
 

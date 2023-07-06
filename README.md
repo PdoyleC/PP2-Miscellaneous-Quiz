@@ -2,7 +2,7 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-The General Quiz Of Everything is a site where people can come and test there knowledge.
+The General Quiz Of Everything is a site where people can come and test there knowledge. The quiz is to be treated just like an exam test so there is going to be a timer on the each question, and if the question isn't answered within the alloted time the quiz is over and the user can restart the quiz.
 
 ![Mockup](documentation/mockup.jpg)
 
@@ -11,6 +11,11 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ## Project Goals
 
 - To create a quiz that covers a wide variety of subjects.
+- To have the score displayed at the end.
+- To be able to enter a user name and have displayed with the score.
+- To have a reset or restart button.
+- There will be a choice of answers to choose from.
+- The correct answer will be displayed when the question is answered.
 
 ### User Feedback
 
