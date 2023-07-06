@@ -182,7 +182,21 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Code
 
-- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k). 
+    - I used  
+        - displayQuestion function was copied and used.
+        - getNextQuestion function was copied and used.
+        - nextquestcurrquest function which I added code to increment number of question completed
+        - runGame function which I added code to and changed to hide button and added code to increment number of question completed.
+        - nextButton function which I added code for the counter I included.
+        - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
+    - The code I added. 
+        - A Timer for each question where there is 20 seconds to answer each question. 
+        - A Progress counter to let you know which question your on.
+        - A user name to display at the end of the quiz with your score and submit button for username.
+        - A rules button to show and hide the rules of the quiz.
+        - An if else statement which takes the score and displays the score with a comment which is related to the score you got.
+
 - Code institute for course material and content for correct and incorrect scoring.
 - Code inspired from CI student Jose Maciel [Link to zemaciel github](https://zemaciel.github.io/project-02/index.html).
 - Code inspired from CI student Lisa Tinmurth [Link to mrst12 github](https://mrst12.github.io/Quizzical/).

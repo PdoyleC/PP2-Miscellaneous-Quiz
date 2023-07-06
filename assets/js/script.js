@@ -50,9 +50,13 @@ function showrules() {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     rulesDiv.classList.remove('hide');
+    submit.classList.remove('hide');
+    myName.classList.remove('hide');
     closeBtn.addEventListener('click', reset);
 }
-
+////////////////////////////////////////////////////////
+/////////////
+/////////////
 //timer code was added by me to set a time for each question.
 
 var time = setInterval(myTimer, 1000);
@@ -253,7 +257,7 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = oldScore + 1;
 }
 
-// End game
+// End game to hide button and text and move to endGameover after a few seconds
 function endGame() {
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Congratulations you have completed the Quiz!</em></strong>
@@ -269,7 +273,7 @@ function endGame() {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
-    setTimeout(endGameover, 5000); //* setTimeout(myFunction, 5 seconds after timer and progress is removed);
+    setTimeout(endGameover, 6000); //* setTimeout(myFunction, 5 seconds after timer and progress is removed);
 
 }
 
