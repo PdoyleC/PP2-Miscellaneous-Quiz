@@ -87,20 +87,22 @@ body {
 
 /*submit text*/
 
-#info,#myLabel {
-        font-size: 20px;
-    }
+#info,
+#myLabel {
+    font-size: 20px;
+}
 
-#myName{
-    padding:12px;
-    text-align:center;
+#myName {
+    padding: 12px;
+    text-align: center;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 1.2rem;
 }
+
 #info {
-        font-size: 20px;
-    }
+    font-size: 20px;
+}
 
 
 /*scoring area*/
@@ -387,6 +389,10 @@ button:hover {
         padding: 0;
     }
 
+    #myName {
+        font-size: 0.8rem;
+    }
+
     #info {
         font-size: 0.7rem;
         padding: 0;
@@ -419,9 +425,8 @@ button:hover {
         font-size: 0.8rem;
     }
 
-    #restartplay-btn {
-        width: 21%;
-        margin: 18px;
-
+    .navigationrestart {
+        width: 34%;
+        font-size: 1.2rem;
     }
 }

@@ -2,7 +2,7 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-The General Quiz Of Everything is a site where people can come and test there knowledge. The quiz is to be treated just like an exam test so there is going to be a timer on the each question, and if the question isn't answered within the alloted time the quiz is over and the user can restart the quiz.
+The General Quiz Of Everything is a site where people can come and test there knowledge. 
 
 ![Mockup](documentation/mockup.jpg)
 
@@ -16,12 +16,13 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - To have a reset or restart button.
 - There will be a choice of answers to choose from.
 - The correct answer will be displayed when the question is answered.
-- For the quiz to be like a timed test, when the time is up the quiz will end. 
+- For the quiz to be like a timed exam test, when the time is up the quiz will end. 
 
 ### User Feedback
 
 - Liked the questions, and would nice if there was dificulty level like easy mediun or hard level.
 - Have a category for different question, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
+- Didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
 
 ## UX
 
@@ -120,15 +121,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Testing and Validation
 
-<details>
-<summary>Features Image</summary>
-
-![Features Home Image](documentation/indexhtmlvalid.png)
-![Features Questions Image](documentation/quizoverhtmlvalid.png)
-![Background TimeOut Image](documentation/toquizoverhtmlvalid.png)
-
-</details>
-
 ### Code Validation
 
  - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
@@ -148,14 +140,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### Site Validation
 
-<details>
-<summary>Connection Test</summary>
-
-![Connection Test Image](documentation/initionalconnectiontest.jpg)
-
-</details>
-
 ### Inspect
+
+remove images and update m-commit and just and text here with tests done.
 
 <details>
 <summary>Inspect Testing</summary>
