@@ -343,8 +343,12 @@ button:hover {
 
     }
 
+    #questions-area {
+        font-size: 1.6rem;
+    }
+
     #questions-cont {
-        font-size: 0.9rem;
+        font-size: 1.9rem;
     }
 
     #restartplay-btn {

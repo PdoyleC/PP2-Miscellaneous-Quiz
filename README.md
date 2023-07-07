@@ -2,7 +2,7 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-The General Quiz Of Everything is a site where people can come and test there knowledge. 
+The General Quiz Of Everything is a site where people can come and test there knowledge.
 
 ![Mockup](documentation/mockup.jpg)
 
@@ -16,7 +16,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - To have a reset or restart button.
 - There will be a choice of answers to choose from.
 - The correct answer will be displayed when the question is answered.
-- For the quiz to be like a timed exam test, when the time is up the quiz will end. 
+- For the quiz to be like a timed exam test, when the time is up the quiz will end.
 
 ### User Feedback
 
@@ -66,7 +66,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Design
-- I want to be able to see the background image so the "quiz-section" class was made transparent by 0.5.
+
+- I wanted to be able to see the background image so the "quiz-section" class was made transparent by 0.5.
 - The Rules button is flashing at the start of the quiz to let users know that it needs to be pressed.
 - The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in tsome jugs and bowls in the image.
 
@@ -125,8 +126,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### Code Validation
 
- - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
- - JShint was used to test the the JavaScript code, there were a number of warnings for 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
+- HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
+- JShint was used to test the the JavaScript code, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
 <details>
 <summary>Features Image</summary>
 
@@ -191,20 +192,21 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Code
 
-- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k). 
-    - I used  
-        - displayQuestion function was copied and used.
-        - getNextQuestion function was copied and used.
-        - nextquestcurrquest function which I added code to increment number of question completed
-        - runGame function which I added code to and changed to hide button and added code to increment number of question completed.
-        - nextButton function which I added code for the counter I included.
-        - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
-    - The code I added. 
-        - A Timer for each question where there is 20 seconds to answer each question. 
-        - A Progress counter to let you know which question your on.
-        - A user name to display at the end of the quiz with your score and submit button for username.
-        - A rules button to show and hide the rules of the quiz.
-        - An if else statement which takes the score and displays the score with a comment which is related to the score you got.
+- This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
+
+  - I used
+    - displayQuestion function was copied and used.
+    - getNextQuestion function was copied and used.
+    - nextquestcurrquest function which I added code to increment number of question completed
+    - runGame function which I added code to and changed to hide button and added code to increment number of question completed.
+    - nextButton function which I added code for the counter I included.
+    - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
+  - The code I added.
+    - A Timer for each question where there is 20 seconds to answer each question.
+    - A Progress counter to let you know which question your on.
+    - A user name to display at the end of the quiz with your score and submit button for username.
+    - A rules button to show and hide the rules of the quiz.
+    - An if else statement which takes the score and displays the score with a comment which is related to the score you got.
 
 - Code institute for course material and content for correct and incorrect scoring.
 - Code inspired from CI student Jose Maciel [Link to zemaciel github](https://zemaciel.github.io/project-02/index.html).
