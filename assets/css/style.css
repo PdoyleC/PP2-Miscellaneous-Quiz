@@ -395,6 +395,16 @@ button:hover {
         padding: 10px;
     }
 
+    #questions-area {
+        width: 80%;
+        font-size: 0.9rem;
+
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
     .scores {
         padding: 0;
     }

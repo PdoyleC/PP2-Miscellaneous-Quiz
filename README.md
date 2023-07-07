@@ -124,6 +124,16 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Testing and Validation
 
+### Lighthouse
+
+- Lighthouse in chrome developer tool, was used to test the website for:
+- Performance - how the page performs whilst loading.
+- Accessibility - how accessible is the site for all users and how can it be improved.
+- Best practices - how does the site conform to industry best practices.
+- SEO - search engine optimization. Is the site optimized for search engine result rankings.
+
+![lighthouse](documentation/lighthouse.png)
+
 ### Code Validation
 
 - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com

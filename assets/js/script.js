@@ -82,8 +82,8 @@ function reset() {
 }
 
 // subname code was added by me to enter the user name and then display at the end of the quiz. 
- function subname() {
-       myName = document.getElementById('myName').value;
+function subname() {
+    myName = document.getElementById('myName').value;
     if (myName) {
 
         letsGo.classList.remove('hide');
@@ -95,14 +95,14 @@ function reset() {
         document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
 
-;
+    ;
 }
 
 
 
 // nextquestcurrquest code is there to increment the current question of the progress counter.
 function nextquestcurrquest() {
-    sec = 20; //code was added by me so there is 20 sec per question.
+    sec = 2000; //code was added by me so there is 20 sec per question, currently at 2000 for testing
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
@@ -119,7 +119,7 @@ function nextquestcurrquest() {
  * moves onto the first question
  */
 function runGame() {
-    sec = 20; //code was added by me so there is 20 sec per question, currently at 200 for testing
+    sec = 2000; //code was added by me so there is 20 sec per question, currently at 2000 for testing
     letsGo.classList.add('hide');
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text
@@ -282,7 +282,7 @@ function timeoutendGame() {  //code was added by me for quiz timing out
             <br>
             
             `;
-    
+
     timershow.classList.add('hide');
     answersArea.classList.add('hide');
     scoresinshow.classList.add('hide');
@@ -296,7 +296,7 @@ function timeoutendGame() {  //code was added by me for quiz timing out
 
 
 //code was added by me for completeing the quiz
-function restart() { 
+function restart() {
     return window.location.assign("toquizover.html");
 }
 
