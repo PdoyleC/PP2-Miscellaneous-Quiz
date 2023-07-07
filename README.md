@@ -16,7 +16,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - To have a reset or restart button.
 - There will be a choice of answers to choose from.
 - The correct answer will be displayed when the question is answered.
-- For the quiz to be like a timed exam test, when the time is up the quiz will end.
+- For the quiz to be the same as a timed exam, when the time is up the quiz will end.
 
 ### User Feedback
 
@@ -28,17 +28,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - Have a leader board for a group of people to compare scores.
 - One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. This was covered below in the Future Adaptations section of the README.
 
-## UX
 
-## Strategy and Scope
-
-### Target Audience
-
-### User Stories
-
-### User Requirements
-
-[Back to contents](#contents)
 
 ## Features
 
@@ -178,18 +168,10 @@ remove images and update m-commit and just and text here with tests done.
 
 [Back to contents](#contents)
 
-## Bugs \& ERRORS
-
-## Unresolved Bugs
-
 ## Deployment and Development
 
 The project was deployed to Github pages using the following steps:
 Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/).
-
-## Technologies Used
-
-[Back to contents](#contents)
 
 ## Credits
 

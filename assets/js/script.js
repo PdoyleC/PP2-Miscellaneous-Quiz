@@ -192,7 +192,7 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
-        var sec = 18000; //added so there is time to read the result 
+        sec = 18000; //added so there is time to read the result 
         scoresinshow.classList.add('hide');
         scoresshow.classList.add('hide');
         answersArea.classList.add('hide');
@@ -256,26 +256,6 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = oldScore + 1;
 }
 
-// End game to hide button and text and move to endGameover after a few seconds
-function endGame() {
-    document.getElementById('questions-area').innerHTML = `
-            <strong><em>Congratulations you have completed the Quiz!</em></strong>
-            <br>
-            Click restart to retry
-            `;
-    timershow.classList.add('hide');
-    answersArea.classList.add('hide');
-    scoresinshow.classList.add('hide');
-    clicksshow.classList.add('hide');
-    finalscoresinshow.classList.add('hide');
-    quizRules.classList.add('hide');
-    infoFront.classList.add('hide');
-    form.classList.add('hide');
-    finishText.classList.add('hide');
-    setTimeout(endGameover, 6000); //* setTimeout(myFunction, 5 seconds after timer and progress is removed);
-
-}
-
 // timeoutendGame code was added by me for when the quiz timer is up the quiz ends it jumps to here. 
 function timeoutendGame() {  //code was added by me for quiz timing out
     document.getElementById('questions-area').innerHTML = `
@@ -292,7 +272,7 @@ function timeoutendGame() {  //code was added by me for quiz timing out
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
-    setTimeout(restart, 500000);//* setTimeout(myFunction, 5 seconds);
+    setTimeout(restart, 5000);//* setTimeout(myFunction, 5 seconds);
 }
 
 
