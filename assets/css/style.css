@@ -335,6 +335,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     body {
         background-image: url("../images/miscq76x10.jpg");
+        margin-left: auto;
     }
 
     .quiz-section {
@@ -369,6 +370,11 @@ button:hover {
 
     .scores-btn {
         font-size: 1rem;
+    }
+
+    .navigationrestart {
+        width: 15%;
+        font-size: 1.8rem;
     }
 
 }

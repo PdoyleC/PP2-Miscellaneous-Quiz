@@ -20,7 +20,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### User Feedback
 
-- Liked the questions, and would nice if there was dificulty level like easy mediun or hard level.
+- Liked the questions, and would nice if there was dificulty levels like easy mediun or hard level.
 - Have a category for different question, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
 - Didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
 
@@ -66,7 +66,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 [Back to contents](#contents)
 
 ## Design
-* The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in tsome jugs and bowls in the image.
+- I want to be able to see the background image so the "quiz-section" class was made transparent by 0.5.
+- The Rules button is flashing at the start of the quiz to let users know that it needs to be pressed.
+- The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in tsome jugs and bowls in the image.
 
 ![Background Image](documentation/eyedropper.png)
 
