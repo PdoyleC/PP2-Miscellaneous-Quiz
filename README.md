@@ -27,6 +27,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - There could be dificulty level with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
 
+![Timer stop Image](documentation/stoptimercheckanswer.mp4)
+
 ## UX
 
 ## Strategy and Scope
@@ -129,8 +131,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
   - For the font stlye.
 - favicon.io
   - For the tab icon.
-
-### Home Page
 
 [Back to contents](#contents)
 
@@ -237,6 +237,8 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 - Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.
 
 ### Media
+
+- The image is by Rachel Claire and is from [Pexels.com](https://www.pexels.com/photo/merchandise-in-store-5865390/)
 
 ### Acknowledgments
 
