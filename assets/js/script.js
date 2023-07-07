@@ -102,13 +102,14 @@ function subname() {
 
 // nextquestcurrquest code is there to increment the current question of the progress counter.
 function nextquestcurrquest() {
-    sec = 2000; //code was added by me so there is 20 sec per question, currently at 2000 for testing
+    sec = 25; //code was added by me so there is 25 sec per question.
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;    //code was added by me to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
 
 }
+
 
 
 
@@ -119,7 +120,7 @@ function nextquestcurrquest() {
  * moves onto the first question
  */
 function runGame() {
-    sec = 2000; //code was added by me so there is 20 sec per question, currently at 2000 for testing
+    sec = 25; //code was added by me so there is 25 sec per question.
     letsGo.classList.add('hide');
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
     finishText.classList.add('hide'); //code was added by me to hide rules and text

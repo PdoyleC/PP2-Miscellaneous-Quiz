@@ -21,8 +21,11 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ### User Feedback
 
 - Liked the questions, and would nice if there was dificulty levels like easy mediun or hard level.
-- Have a category for different question, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
+- Have a category for different questions, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
 - Didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
+- The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 second.
+- There could be dificulty level with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
+- Have a leader board for a group of people to compare scores.
 
 ## UX
 
@@ -40,7 +43,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - There are 10 questions that appeared randomly out of a totol of 40.
 - The players score is visible on the screen under the quiz.
-- There is a countdown timer which end the quiz after 20 seconds if the question isn't answered,which appears after the start button is pressed.
+- There is a countdown timer which end the quiz after 25 seconds if the question isn't answered,which appears after the start button is pressed.
 - There is a progress counter which appears after the start button is pressed.
 - Rules can be seen by pressing the Rules button.
 
@@ -96,6 +99,15 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ## Structure and Skeleton
 
 ### Wireframes
+
+<details>
+<summary>wireFrame Image</summary>
+
+![wireFrame Desktop Image](documentation/wireframedesktop.png)
+![wireFrame Ipad Image](documentation/wireframeipad.png)
+![wireFrame Mobile Image](documentation/wireframemobile.png)
+
+</details>
 
 ### Programmes used
 
@@ -212,7 +224,7 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
     - nextButton function which I added code for the counter I included.
     - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
   - The code I added.
-    - A Timer for each question where there is 20 seconds to answer each question.
+    - A Timer for each question where there is 25 seconds to answer each question.
     - A Progress counter to let you know which question your on.
     - A user name to display at the end of the quiz with your score and submit button for username.
     - A rules button to show and hide the rules of the quiz.
