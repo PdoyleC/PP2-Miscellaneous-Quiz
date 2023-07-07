@@ -22,12 +22,13 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - Liked the questions, and would nice if there was dificulty levels like easy mediun or hard level.
 - Have a category for different questions, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
-- Didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
-- The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 second.
-- There could be dificulty level with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
+- A user didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
+- The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 seconds.
+- One user would like it if there could be dificulty levels with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
+- One user wanted to be able a check there answer after it was answered so I implemented for the timer to stop and start again
 
-![Timer stop Image](documentation/stoptimercheckanswer.mp4)
+![Timer stop Image](documentation/stoptimercheckanswer.gif)
 
 ## UX
 
@@ -93,6 +94,9 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
+
+- The user would be able a check there answer after it was answered so it would be good to implemented for the timer to stop and start again, this can be seen below in a gif, this was taken out as the goal of the project was to have a time limit on the question.
+  ![Timer stop Image](documentation/stoptimercheckanswer.gif)
 
 ### Future changes
 
