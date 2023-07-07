@@ -26,9 +26,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 seconds.
 - One user would like it if there could be dificulty levels with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
-- One user wanted to be able a check there answer after it was answered so I implemented for the timer to stop and start again
-
-![Timer stop Image](documentation/stoptimercheckanswer.gif)
+- One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. This was covered below in the Future Adaptations section of the README.
 
 ## UX
 
@@ -95,14 +93,11 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
 
-- The user would be able a check there answer after it was answered so it would be good to implemented for the timer to stop and start again, this can be seen below in a gif, this was taken out as the goal of the project was to have a time limit on the question.
+- The user would be able a check there answer after it was answered so it would be good to implemented the timer to stop and start again, this can be seen below in a gif, this was taken out as the goal of the project was to have a time limit on the question and quiz its self.
+
   ![Timer stop Image](documentation/stoptimercheckanswer.gif)
 
-### Future changes
-
 [Back to contents](#contents)
-
-## Structure and Skeleton
 
 ### Wireframes
 
@@ -246,4 +241,5 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 ### Acknowledgments
 
-[Back to contents](#contents)
+- Thank you to my mentor Elaine Roche who helped with points and tips and gave me very good advice and feedback on how to plan and execute this project and who provided me with lots of pointers for my project.
+  [Back to contents](#contents)
