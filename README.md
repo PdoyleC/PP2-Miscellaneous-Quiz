@@ -82,11 +82,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
-
-- The user would be able a check there answer after it was answered so it would be good to implemented the timer to stop and start again, this can be seen below in a gif, this was taken out as the goal of the project was to have a time limit on the question and quiz its self.
-
-  ![Timer stop Image](documentation/stoptimercheckanswer.gif)
-
+  
 [Back to contents](#contents)
 
 ### Wireframes
@@ -193,10 +189,10 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 - This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
 
-  - I used
+  - I used,
     - displayQuestion function was copied and used.
     - getNextQuestion function was copied and used.
-    - nextquestcurrquest function which I added code to increment number of question completed
+    - nextquestcurrquest function which I added code to increment number of questions completed.
     - runGame function which I added code to and changed to hide button and added code to increment number of question completed.
     - nextButton function which I added code for the counter I included.
     - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
