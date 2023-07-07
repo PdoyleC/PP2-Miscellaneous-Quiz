@@ -216,7 +216,7 @@ function checkAnswer(event) {
 
 
         }
-        // document.getElementById('finish-text-score').innerHTML = `Well done ${myName}.You have scored ${score} out 10. Thank you for taking the Quiz`; // code added by me to and display at end of quiz.
+        
         setTimeout(endGameover, 10000); //comment out to test score page at end of quiz
     }
 
@@ -292,7 +292,7 @@ function timeoutendGame() {  //code was added by me for quiz timing out
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
-    setTimeout(restart, 5000);//* setTimeout(myFunction, 5 seconds);
+    setTimeout(restart, 500000);//* setTimeout(myFunction, 5 seconds);
 }
 
 

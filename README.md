@@ -160,10 +160,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 </details>
 
-### WAVE
-
-### Site Validation
-
 ### Inspect
 
 remove images and update m-commit and just and text here with tests done.
