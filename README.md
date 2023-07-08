@@ -22,13 +22,14 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### User Feedback
 
-- Liked the questions, and would nice if there was dificulty levels like easy mediun or hard level.
+- Liked the questions, and would be nice if there was dificulty levels like easy mediun or hard level.
 - Have a category for different questions, e.g. Science, history, TV, Movie and pick the category at the start of the quiz.
 - A user didn't know that the quiz would end after 20 seconds, so I implemented that the submit and start button would only appear after the rules have been opened.
 - The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 seconds.
 - One user would like it if there could be dificulty levels with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
 - One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. One of the goals of the quiz is to treat it as a timed exam. Another way this could be achived would to be able to sellect the time at the start of the quiz, if the user selected 1min per question, the user would be able check there answer.
+- A user pointed out that when the last question is answered the quiz justs jumps to the score and comment section, the user never gets to see what the answer is and if they picked the correct answer. To fix this issue I put in place a nested function called endscore in the function checkAnswer, and the nested function is called in an else statement with a 5 second delay so the user can read there answer. In the else statement the timer is also set back to 25 seconds which takes into account if the answer is sellected with 1 second to go. It is also setup that the timer is removed from dispaly so there is no confusion that the quiz is over.
 
 ## Features
 
@@ -190,16 +191,16 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 
 - This you tube video for help to get started [You tube link](https://www.youtube.com/watch?v=riDzcEQbX6k).
 
-  - I used,
+  - I used from the youtube video,
     - displayQuestion function was copied and used.
     - getNextQuestion function was copied and used.
-    - nextquestcurrquest function which I added code to increment number of questions completed.
-    - runGame function which I added code to and changed to hide button and added code to increment number of question completed.
-    - nextButton function which I added code for the counter I included.
-    - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
+    - nextquestcurrquest function was used and which I added code to increment number of questions completed.
+    - runGame function was used and which I added code to and changed to hide button and added code to increment number of question completed.
+    - nextButton function was used and which I added code for the counter I included.
+    - checkAnswer function was used and which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
   - The code I added.
     - A Timer for each question where there is 25 seconds to answer each question.
-    - Nested function code added by me called endscore in function checkAnswer for the last questions answer to be seen as the next button isn't displayed as its in an if else statement.
+    - Nested function code added by me as a time delay called endscore in function checkAnswer for the last questions answer to be seen as the next button isn't displayed as its in an if else statement.
     - A Progress counter to let you know which question your on.
     - A user name to display at the end of the quiz with your score and submit button for username.
     - A rules button to show and hide the rules of the quiz.

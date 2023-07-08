@@ -192,6 +192,8 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
+        sec = 25;
+        timershow.classList.add('hide');
         setTimeout(endscore, 5000);
 
         function endscore() {  // nested function code added by me to give the user a chance to see the answer. 
