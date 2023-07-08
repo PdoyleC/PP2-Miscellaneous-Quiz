@@ -2,9 +2,11 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-The General Quiz Of Everything is a site where people can come and test there knowledge.
+The General Quiz Of Everything is a site where people can come and test there knowledge on a wide variety of subjects.
 
 ![Mockup](documentation/mockup.jpg)
+
+[Am I Responsive - link](https://ui.dev/amiresponsive?url=https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
 ## Contents
 
@@ -26,7 +28,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - The quiz time limit was originally 20 seconds, and some peoples feedback said that the 20secs wasn't enough, so the time was increased to 25 seconds.
 - One user would like it if there could be dificulty levels with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
-- One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. This was covered below in the Future Adaptations section of the README.
+- One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. One of the goals of the quiz is to treat it as a timed exam. Another way this could be achived would to be able to sellect the time at the start of the quiz, if the user selected 1min per question, the user would be able check there answer.
 
 ## Features
 
@@ -41,6 +43,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ![Features Home Image](documentation/features.jpg)
 ![Features Questions Image](documentation/features1.jpg)
+![Score Image](documentation/features4.jpg)
 ![Background TimeOut Image](documentation/features2.jpg)
 
 </details>
@@ -78,6 +81,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
+- For the user to have a choice of the number of questions they would like to be asked, e.g 10,20,30 or even 40 questions per quiz.
 - I'd also like to add a choise of timers to choose from and difficulty levels, a user could choose a hard level and a short timer, to make it really difficult.
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
