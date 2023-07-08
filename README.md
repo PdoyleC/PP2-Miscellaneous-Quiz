@@ -34,9 +34,10 @@
 
 ## Features
 
-- There are 10 questions that appeared randomly out of a totol of 40.
-- The players score and name is visible on the screen under the quiz.
-- The score will also have a message depending on the score. e.g They just didn't suit you Jane Bloggs.
+- There are 10 questions that appeared randomly out of a total of 40.
+- The user enters there username to be displayed at the end of the quiz.
+- The players score is visible on the screen under the quiz.
+- The score at the end will also have a message depending on the score. e.g They just didn't suit you Jane Bloggs, if the score is low.
 - There is a countdown timer which ends the quiz after 25 seconds if the question isn't answered,which appears after the start button is pressed.
 - There is a progress counter which appears after the start button is pressed.
 - Rules can be seen by pressing the Rules button.
@@ -131,6 +132,10 @@
 
 - I had the scores, timer and progress counters all hidden at the end of the quiz, but I wasn't able to hide the answer section. With thanks to 3 CI tutor's this was solved, as it was a node list and adding [0] to the class name resolved the issue.
 
+## Unfixed Bugs
+
+- No unfixed bugs.
+
 ## Testing and Validation
 
 ### Lighthouse
@@ -146,7 +151,7 @@
 ### Code Validation
 
 - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
-- JShint was used to test the the JavaScript code, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
+- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
 <details>
 <summary>Features Image</summary>
 
@@ -208,7 +213,7 @@
     - nextquestcurrquest function was used and which I added code to increment number of questions completed.
     - runGame function was used and which I added code to and changed to hide button and added code to increment number of question completed.
     - nextButton function was used and which I added code for the counter I included.
-    - checkAnswer function was used and which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
+    - checkAnswer function was used and which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got. A time delay and nested function was also added by me to this section of code.
   - The code I added.
     - A Timer for each question where there is 25 seconds to answer each question.
     - Nested function code added by me as a time delay called endscore in function checkAnswer for the last questions answer to be seen as the next button isn't displayed as its in an if else statement.
@@ -231,4 +236,5 @@
 
 - Thank you to my mentor Elaine Roche who helped with points and tips and gave me very good advice and feedback on how to plan and execute this project and who provided me with lots of pointers for my project.
 - A thanks goes to Gemma,Rebecca and Kevin from CI Tutor's for there help in hiding the answer area.
+
   [Back to contents](#contents)

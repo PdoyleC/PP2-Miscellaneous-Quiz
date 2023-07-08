@@ -13,7 +13,6 @@ const restartBut = document.getElementById('restart-btn');
 const timershow = document.getElementById('timer-btn');
 const scoresshow = document.getElementById('scores-btn');
 const scoresinshow = document.getElementById('scoresin-btn');
-const finalscoresinshow = document.getElementById('finalscoresin-btn');
 const clicksshow = document.getElementById('clicks-btn');
 const quizRules = document.getElementById('quiz-rules');
 const rulesDiv = document.getElementById('rules-guide');
@@ -44,7 +43,7 @@ quizRules.addEventListener('click', showrules);
 nextBut.addEventListener('click', nextquestcurrquest);
 
 
-
+//showrules code was added by me
 function showrules() {
     quizRules.classList.add('hide');
     infoFront.classList.add('hide');
@@ -69,7 +68,7 @@ function myTimer() {
     }
 }
 
-// reset code was added by me to show and hide the rules text after the close button is pressed in function showrules.
+// reset function code was added by me to show and hide the rules text after the close button is pressed in function showrules.
 
 function reset() {
     quizRules.classList.remove('hide');
@@ -101,7 +100,7 @@ function subname() {
 
 
 // nextquestcurrquest code is there to increment the current question of the progress counter.
-function nextquestcurrquest() {
+function nextquestcurrquest() {  // code form Web Dev Simplified on youtube, link in README
     sec = 25; //code was added by me so there is 25 sec per question.
     currentQuestionIndex++;
     getNextQuestion();
@@ -119,7 +118,7 @@ function nextquestcurrquest() {
  * hides the start button, shuffles the questions and adds 10
  * moves onto the first question
  */
-function runGame() {
+function runGame() { // code form Web Dev Simplified on youtube, link in README
     sec = 25; //code was added by me so there is 25 sec per question.
     letsGo.classList.add('hide');
     quizRules.classList.add('hide'); //code was added by me to hide rules and text
@@ -138,21 +137,21 @@ function runGame() {
     clicks += 1;    //code was added by me to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
     questionCont.classList.remove('hide');
-    score = 0;
+    score = 0; //code was added by me
     getNextQuestion();
 }
 
 /**
  * resets and shuffles questions
  */
-function getNextQuestion() {
+function getNextQuestion() { // code form Web Dev Simplified on youtube, link in README
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 // Gets the questions and answers from the array and displays them
 
-function displayQuestion(question) {
+function displayQuestion(question) { // code form Web Dev Simplified on youtube, link in README
     questionArea.innerText = question.question;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -168,7 +167,7 @@ function displayQuestion(question) {
 
 //takes out the old answers so new ones can go in
 
-function defaultState() {
+function defaultState() { // code form Web Dev Simplified on youtube, link in README
     nextBut.classList.add('hide');
     while (answersArea.firstChild) {
         answersArea.removeChild(answersArea.firstChild);
@@ -179,7 +178,7 @@ function defaultState() {
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
  */
-function checkAnswer(event) {
+function checkAnswer(event) { // code form Web Dev Simplified on youtube, link in README
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
     // and increments score if correct
@@ -192,11 +191,11 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
-        sec = 25;
-        timershow.classList.add('hide');
-        setTimeout(endscore, 5000);
+        sec = 25; // code added by me to insure the quiz dosen't time out
+        timershow.classList.add('hide'); // code added by me to to hide the timer
+        setTimeout(endscore, 5000); // code added by me to fro the user to check there final answer.
 
-        function endscore() {  // nested function code added by me to give the user a chance to see the answer. 
+        function endscore() {  // This nested function code added by me to give the user a chance to see the answer of the last question. 
             scoresinshow.classList.add('hide');
             scoresshow.classList.add('hide');
             answersArea.classList.add('hide');
@@ -207,7 +206,7 @@ function checkAnswer(event) {
             restartBut.classList.add('hide');
 
 
-            if (score >= 8) {   // if else code added by me to display a comment name and score at end of quiz.
+            if (score >= 8) {   // if else code added by me to display a comment, name and score at end of quiz.
 
                 document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
             } else if (score >= 6 && score < 8) {
@@ -232,7 +231,7 @@ function checkAnswer(event) {
 }
 
 
-function setStatusClass(element, correct) {
+function setStatusClass(element, correct) {    // code form Web Dev Simplified on youtube, link in README
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -241,13 +240,14 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
+function clearStatusClass(element) { // code form Web Dev Simplified on youtube, link in README
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
 /**
- * Gets the current score from the DOM and increments it by 1
+ * Gets the current score from the DOM and increments it by 1.
+ * Code from CI loves maths.
  */
 
 function incrementCorrectScore() {
@@ -261,7 +261,7 @@ function incrementWrongAnswer() {
 }
 
 // timeoutendGame code was added by me for when the quiz timer is up the quiz ends it jumps to here. 
-function timeoutendGame() {  //code was added by me for quiz timing out
+function timeoutendGame() {
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
             <br>
@@ -280,12 +280,12 @@ function timeoutendGame() {  //code was added by me for quiz timing out
 }
 
 
-//code was added by me for completeing the quiz
+//restart code was added by me for completeing the quiz
 function restart() {
     return window.location.assign("toquizover.html");
 }
 
-//code was added by me for the quiz timing out
+//endGameover code was added by me for the quiz timing out
 function endGameover() {
     return window.location.assign("quizover.html");
 }
