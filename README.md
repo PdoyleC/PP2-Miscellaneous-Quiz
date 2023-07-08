@@ -2,11 +2,12 @@
 
 [View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
-The General Quiz Of Everything is a site where people can come and test there knowledge on a wide variety of subjects.
+<h2 align="center"> The General Quiz Of Everything is a site where people can come and test there knowledge on a wide variety of subjects.</h2>
 
 ![Mockup](documentation/mockup.jpg)
 
 [Am I Responsive - link](https://ui.dev/amiresponsive?url=https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
+[Link to live project](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
 ## Contents
 
@@ -29,7 +30,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - One user would like it if there could be dificulty levels with the time also, having a choice of 20 sec or 25 secs or 30 sec per question.
 - Have a leader board for a group of people to compare scores.
 - One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. One of the goals of the quiz is to treat it as a timed exam. Another way this could be achived would to be able to sellect the time at the start of the quiz, if the user selected 1min per question, the user would be able check there answer.
-- A user pointed out that when the last question is answered the quiz justs jumps to the score and comment section, the user never gets to see what the answer is and if they picked the correct answer. To fix this issue I put in place a nested function called endscore in the function checkAnswer, and the nested function is called in an else statement with a 5 second delay so the user can read there answer. In the else statement the timer is also set back to 25 seconds which takes into account if the answer is sellected with 1 second to go. It is also setup that the timer is removed from dispaly so there is no confusion that the quiz is over.
+- A user pointed out that when the last question is answered the quiz justs jumps to the score and comment section, the user never gets to see what the answer is and if they picked the correct answer. To fix this issue I put in place a nested function called endscore in the function checkAnswer, and the nested function is called in an else statement with a 5 second delay so the user can read there answer. In the else statement the timer is also set back to 25 seconds which takes into account if the answer is sellected with 1 second to go, the quiz won't time out. It is also setup that the timer is removed from dispaly so there is no confusion that the quiz is over.
 
 ## Features
 
@@ -126,6 +127,10 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 [Back to contents](#contents)
 
+## Fixed Bugs
+
+- I had the scores, timer and progress counters all hidden at the end of the quiz, but I wasn't able to hide the answer section. With thanks to 3 CI tutor's this was solved, as it was a node list and adding [0] to the class name resolved the issue.
+
 ## Testing and Validation
 
 ### Lighthouse
@@ -166,10 +171,16 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 [Back to contents](#contents)
 
-## Deployment and Development
+## Deployment
 
-The project was deployed to Github pages using the following steps:
-Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/).
+- The project was deployed to Github pages using the following steps:
+
+1. Log into Github and locate the [Github repository](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/).
+2. Click on the settings icon at the top of the repository.
+3. Scroll down until you come to the Github pages section
+   - On this part it says it now has it's own dedicated tab and to click check it out click this.
+4. Where it says **source** select **main**, next to this should say root.
+5. Click save, then refresh the page.
 
 ## Credits
 
@@ -219,4 +230,5 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
 ### Acknowledgments
 
 - Thank you to my mentor Elaine Roche who helped with points and tips and gave me very good advice and feedback on how to plan and execute this project and who provided me with lots of pointers for my project.
+- A thanks goes to Gemma,Rebecca and Kevin from CI Tutor's for there help in hiding the answer area.
   [Back to contents](#contents)
