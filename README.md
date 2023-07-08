@@ -1,12 +1,11 @@
 <h1 align="center">The General Quiz Of Everything</h1>
 
-[View the live project here](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
-
 <h2 align="center"> The General Quiz Of Everything is a site where people can come and test there knowledge on a wide variety of subjects.</h2>
 
 ![Mockup](documentation/mockup.jpg)
 
 [Am I Responsive - link](https://ui.dev/amiresponsive?url=https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
+
 [Link to live project](https://pdoylec.github.io/PP2-The-General-Quiz-Of-Everything/)
 
 ## Contents

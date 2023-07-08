@@ -260,9 +260,9 @@ button:hover {
 
 #start-btn,
 #next-btn,
-#restart-btn {
-    width: 30%;
-    margin: 10px 0;
+{
+width: 30%;
+margin: 10px 0;
 }
 
 .navigationrestart {

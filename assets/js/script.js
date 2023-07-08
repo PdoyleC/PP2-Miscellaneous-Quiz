@@ -32,6 +32,7 @@ let currentQuestionIndex; //index for the current question
 let score = 0;
 var sec = 18000; //this gives time to start the quiz
 var clicks = 0;
+var time = setInterval(myTimer, 1000);
 
 
 
@@ -55,8 +56,6 @@ function showrules() {
 }
 
 //timer code was added by me to set a time for each question.
-
-var time = setInterval(myTimer, 1000);
 
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
@@ -100,6 +99,7 @@ function subname() {
 
 
 // nextquestcurrquest code is there to increment the current question of the progress counter.
+
 function nextquestcurrquest() {  // code form Web Dev Simplified on youtube, link in README
     sec = 25; //code was added by me so there is 25 sec per question.
     currentQuestionIndex++;
@@ -137,7 +137,6 @@ function runGame() { // code form Web Dev Simplified on youtube, link in README
     clicks += 1;    //code was added by me to increment number of question completed
     document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
     questionCont.classList.remove('hide');
-    score = 0; //code was added by me
     getNextQuestion();
 }
 
@@ -181,7 +180,6 @@ function defaultState() { // code form Web Dev Simplified on youtube, link in RE
 function checkAnswer(event) { // code form Web Dev Simplified on youtube, link in README
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
-    // and increments score if correct
     if (correct) score++; // code added by me to increment score and display at end of quiz.
 
     setStatusClass(document.body, correct);
@@ -190,10 +188,10 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
-    } else { // else end the game and show the score after name input
+    } else {
         sec = 25; // code added by me to insure the quiz dosen't time out
         timershow.classList.add('hide'); // code added by me to to hide the timer
-        setTimeout(endscore, 5000); // code added by me to fro the user to check there final answer.
+        setTimeout(endscore, 5000); // code added by me to for the user to check there final answer.
 
         function endscore() {  // This nested function code added by me to give the user a chance to see the answer of the last question. 
             scoresinshow.classList.add('hide');
@@ -260,7 +258,7 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = oldScore + 1;
 }
 
-// timeoutendGame code was added by me for when the quiz timer is up the quiz ends it jumps to here. 
+// timeoutendGame code was added by me for when the quiz timer is up the quiz ends, it jumps to here. 
 function timeoutendGame() {
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
