@@ -207,7 +207,7 @@ function checkAnswer(event) {
             restartBut.classList.add('hide');
 
 
-            if (score >= 8) {   // if else code added by me to display at end of quiz.
+            if (score >= 8) {   // if else code added by me to display a comment name and score at end of quiz.
 
                 document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
             } else if (score >= 6 && score < 8) {
@@ -219,10 +219,7 @@ function checkAnswer(event) {
             } else {
 
                 document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
-
-
             }
-
             setTimeout(endGameover, 10000);
         }
     }
@@ -292,11 +289,3 @@ function restart() {
 function endGameover() {
     return window.location.assign("quizover.html");
 }
-
-
-
-/////////////////////
-////////////
-/////
-////
-////
