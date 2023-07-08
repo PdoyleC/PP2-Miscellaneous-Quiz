@@ -192,7 +192,6 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
-        sec = 18000; //added so there is time to read the result 
         scoresinshow.classList.add('hide');
         scoresshow.classList.add('hide');
         answersArea.classList.add('hide');
@@ -216,8 +215,8 @@ function checkAnswer(event) {
 
 
         }
-        
-        setTimeout(endGameover, 10000); //comment out to test score page at end of quiz
+
+        setTimeout(endGameover, 10000);
     }
 
     if (correct) {

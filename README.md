@@ -28,8 +28,6 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - Have a leader board for a group of people to compare scores.
 - One user wanted to be able a check there answer after it was answered before moving onto the next question, which would mean for the timer to stop and start again. This was covered below in the Future Adaptations section of the README.
 
-
-
 ## Features
 
 - There are 10 questions that appeared randomly out of a totol of 40.
@@ -80,9 +78,10 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
+- I'd also like to add a choise of timers to choose from and difficulty levels, a user could choose a hard level and a short timer, to make it really difficult.
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
   ![Future Ideas Image](documentation/futureidea.jpg)
-  
+
 [Back to contents](#contents)
 
 ### Wireframes
