@@ -33,7 +33,8 @@ The General Quiz Of Everything is a site where people can come and test there kn
 ## Features
 
 - There are 10 questions that appeared randomly out of a totol of 40.
-- The players score is visible on the screen under the quiz.
+- The players score and name is visible on the screen under the quiz.
+- The score will also have a message depending on the score. e.g They just didn't suit you Jane Bloggs.
 - There is a countdown timer which end the quiz after 25 seconds if the question isn't answered,which appears after the start button is pressed.
 - There is a progress counter which appears after the start button is pressed.
 - Rules can be seen by pressing the Rules button.
@@ -64,12 +65,13 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 - I wanted to be able to see the background image so the "quiz-section" class was made transparent by 0.5.
 - The Rules button is flashing at the start of the quiz to let users know that it needs to be pressed.
-- The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in tsome jugs and bowls in the image.
+- The colour when the buttons are hover over was picked using the eye dropper in chrome developer where the colour can be changed. The colour was picked from the red circle in the image below. This colour is repeated in the image also, in some jugs and bowls in the image.
 
 ![Background Image](documentation/eyedropper.png)
 
 ### Fonts
 
+- The font Lora was used
 <details>
 <summary>Font Image</summary>
 
