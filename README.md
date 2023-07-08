@@ -35,7 +35,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 - There are 10 questions that appeared randomly out of a totol of 40.
 - The players score and name is visible on the screen under the quiz.
 - The score will also have a message depending on the score. e.g They just didn't suit you Jane Bloggs.
-- There is a countdown timer which end the quiz after 25 seconds if the question isn't answered,which appears after the start button is pressed.
+- There is a countdown timer which ends the quiz after 25 seconds if the question isn't answered,which appears after the start button is pressed.
 - There is a progress counter which appears after the start button is pressed.
 - Rules can be seen by pressing the Rules button.
 
@@ -51,7 +51,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### Background Image
 
-- The image is by Rachel Claire and is from [Pexels.com](https://www.pexels.com/photo/merchandise-in-store-5865390/)
+- The image is by Rachel Claire and is from [Pexels.com](https://www.pexels.com/photo/merchandise-in-store-5865390/), it was chosen as it has a mix of everything in the image - typewriter, camera, jug, bowl, books, glasses, mirrors, towels - , which corresponds to the quiz, a mix of everything.
 <details>
 <summary>Background Image</summary>
 
@@ -71,7 +71,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ### Fonts
 
-- The font Lora was used
+- The font Lora was used with a backup of sans-serif should it not be accessible for all.
 <details>
 <summary>Font Image</summary>
 
@@ -83,6 +83,7 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 ## Future Adaptations
 
+- Add more questions about books, geography and history.
 - For the user to have a choice of the number of questions they would like to be asked, e.g 10,20,30 or even 40 questions per quiz.
 - I'd also like to add a choise of timers to choose from and difficulty levels, a user could choose a hard level and a short timer, to make it really difficult.
 - In the future I'd like to add smaller indicators, to show which question was selected and the correct answer if the incorrect was selected.  
@@ -151,17 +152,12 @@ The General Quiz Of Everything is a site where people can come and test there kn
 
 </details>
 
-### Inspect
+### Inspect and Testing
 
-remove images and update m-commit and just and text here with tests done.
+- I used Inspect to make changes to the code and to test layout and positioning. Inspect was used to test the different media screen sizes.
+- The image below shows the site being tested using Chrome,Edge/FireFox, iPad and iPhone4
 
-<details>
-<summary>Inspect Testing</summary>
-
-![Inspect Testing](documentation/ongoingtesting.jpg)
-![Inspect Testing](documentation/ongoingtesting1.jpg)
-
-</details>
+![Inspect Testing](documentation/inspectxl.png)
 
 ### 404 ERROR
 
