@@ -199,6 +199,7 @@ Log into Github and locate the [Github](https://pdoylec.github.io/PP2-The-Genera
     - checkAnswer function which I manipulated by adding code to increment the score to be displayed at the end, I also added an if else statement to output a comment which is related to the score you got.
   - The code I added.
     - A Timer for each question where there is 25 seconds to answer each question.
+    - Nested function code added by me called endscore in function checkAnswer for the last questions answer to be seen as the next button isn't displayed as its in an if else statement.
     - A Progress counter to let you know which question your on.
     - A user name to display at the end of the quiz with your score and submit button for username.
     - A rules button to show and hide the rules of the quiz.

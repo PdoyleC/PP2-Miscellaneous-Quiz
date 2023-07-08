@@ -192,31 +192,37 @@ function checkAnswer(event) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBut.classList.remove('hide');
     } else { // else end the game and show the score after name input
-        scoresinshow.classList.add('hide');
-        scoresshow.classList.add('hide');
-        answersArea.classList.add('hide');
-        clicksshow.classList.add('hide');
-        timershow.classList.add('hide');
-        questionCont.classList.add('hide');
-        finishText.classList.remove('hide');
-        restartBut.classList.add('hide');
-        if (score >= 8) {   // if else code added by me to display at end of quiz.
+        setTimeout(endscore, 5000);
 
-            document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-        } else if (score >= 6 && score < 8) {
-
-            document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-        } else if (score >= 4 && score < 6) {
-
-            document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-        } else {
-
-            document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
+        function endscore() {  // nested function code added by me to give the user a chance to see the answer. 
+            scoresinshow.classList.add('hide');
+            scoresshow.classList.add('hide');
+            answersArea.classList.add('hide');
+            clicksshow.classList.add('hide');
+            timershow.classList.add('hide');
+            questionCont.classList.add('hide');
+            finishText.classList.remove('hide');
+            restartBut.classList.add('hide');
 
 
+            if (score >= 8) {   // if else code added by me to display at end of quiz.
+
+                document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+            } else if (score >= 6 && score < 8) {
+
+                document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+            } else if (score >= 4 && score < 6) {
+
+                document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+            } else {
+
+                document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
+
+
+            }
+
+            setTimeout(endGameover, 10000);
         }
-
-        setTimeout(endGameover, 10000);
     }
 
     if (correct) {
@@ -285,3 +291,10 @@ function endGameover() {
     return window.location.assign("quizover.html");
 }
 
+
+
+/////////////////////
+////////////
+/////
+////
+////
