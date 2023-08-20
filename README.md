@@ -222,6 +222,7 @@
     - An if else statement which takes the score and displays the score with a comment which is related to the score you got.
 
 - Code institute for course material and content for correct and incorrect scoring.
+- Code to trim spaces in username [Link w3schools](https://www.w3schools.com/jsref/jsref_trim_string.asp).
 - Code inspired from CI student Jose Maciel [Link to zemaciel github](https://zemaciel.github.io/project-02/index.html).
 - Code inspired from CI student Lisa Tinmurth [Link to mrst12 github](https://mrst12.github.io/Quizzical/).
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).

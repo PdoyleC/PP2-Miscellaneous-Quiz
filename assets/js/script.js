@@ -85,7 +85,7 @@ function subname() {
 
     myName = document.getElementById('myName').value;
     if (enteredName) {
-        myName = enteredName
+        myName = enteredName;
         letsGo.classList.remove('hide');
         submit.classList.add('hide'); // code added to remove submit button once name has been entered.
         ruleText.classList.add('hide'); // code added to remove OOPS message when submit is entered.
@@ -95,7 +95,7 @@ function subname() {
         document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
 
-    
+
 }
 
 
@@ -182,7 +182,7 @@ function defaultState() { // code form Web Dev Simplified on youtube, link in RE
 function checkAnswer(event) { // code form Web Dev Simplified on youtube, link in README
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
-    
+
     if (correct) score++; // code added by me to increment score and display at end of quiz.
 
     setStatusClass(document.body, correct);
