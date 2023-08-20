@@ -55,6 +55,7 @@ function showrules() {
     closeBtn.addEventListener('click', reset);
 }
 
+
 //timer code was added by me to set a time for each question.
 
 function myTimer() {
