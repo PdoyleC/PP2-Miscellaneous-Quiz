@@ -90,6 +90,7 @@ function subname() {
         letsGo.classList.remove('hide');
         submit.classList.add('hide'); // code added to remove submit button once name has been entered.
         ruleText.classList.add('hide'); // code added to remove OOPS message when submit is entered.
+        closeBtn.addEventListener('click', reset);
 
     } else {
         ruleText.classList.remove('hide');
@@ -184,51 +185,55 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
 
-    if (correct) score++; // code added by me to increment score and display at end of quiz.
+    if (!clickedButton.classList.contains('answered')) {
+        clickedButton.classList.add('answered'); // Add a class to mark this button as answered
 
-    setStatusClass(document.body, correct);
-    Array.from(answersArea.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
-    });
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextBut.classList.remove('hide');
-    } else {
-        sec = 25; // code added by me to insure the quiz dosen't time out
-        timershow.classList.add('hide'); // code added by me to to hide the timer
-        setTimeout(endscore, 5000); // code added by me to for the user to check there final answer.
+        if (correct) score++; // code added by me to increment score and display at end of quiz.
 
-        function endscore() {  // This nested function code added by me to give the user a chance to see the answer of the last question. 
-            scoresinshow.classList.add('hide');
-            scoresshow.classList.add('hide');
-            answersArea.classList.add('hide');
-            clicksshow.classList.add('hide');
-            timershow.classList.add('hide');
-            questionCont.classList.add('hide');
-            finishText.classList.remove('hide');
-            restartBut.classList.add('hide');
+        setStatusClass(document.body, correct);
+        Array.from(answersArea.children).forEach(button => {
+            setStatusClass(button, button.dataset.correct);
+            button.removeEventListener('click', checkAnswer); // Remove the event listener to prevent further clicks
+        });
+        if (shuffledQuestions.length > currentQuestionIndex + 1) {
+            nextBut.classList.remove('hide');
+        } else {
+            sec = 25; // code added by me to insure the quiz dosen't time out
+            timershow.classList.add('hide'); // code added by me to to hide the timer
+            setTimeout(endscore, 5000); // code added by me to for the user to check there final answer.
+
+            function endscore() {  // This nested function code added by me to give the user a chance to see the answer of the last question. 
+                scoresinshow.classList.add('hide');
+                scoresshow.classList.add('hide');
+                answersArea.classList.add('hide');
+                clicksshow.classList.add('hide');
+                timershow.classList.add('hide');
+                questionCont.classList.add('hide');
+                finishText.classList.remove('hide');
+                restartBut.classList.add('hide');
 
 
-            if (score >= 8) {   // if else code added by me to display a comment, name and score at end of quiz.
+                if (score >= 8) {   // if else code added by me to display a comment, name and score at end of quiz.
+                    document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                } else if (score >= 6 && score < 8) {
 
-                document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-            } else if (score >= 6 && score < 8) {
+                    document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                } else if (score >= 4 && score < 6) {
 
-                document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-            } else if (score >= 4 && score < 6) {
+                    document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                } else {
 
-                document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
-            } else {
-
-                document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
+                    document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
+                }
+                setTimeout(endGameover, 10000);
             }
-            setTimeout(endGameover, 10000);
         }
-    }
 
-    if (correct) {
-        incrementCorrectScore();
-    } else {
-        incrementWrongAnswer();
+        if (correct) {
+            incrementCorrectScore();
+        } else {
+            incrementWrongAnswer();
+        }
     }
 }
 
