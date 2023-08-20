@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 //variables
 const letsGo = document.getElementById('start-btn');
 const nextBut = document.getElementById('next-btn');
@@ -33,6 +32,7 @@ let score = 0;
 var sec = 18000; //this gives time to start the quiz
 var clicks = 0;
 var time = setInterval(myTimer, 1000);
+
 
 
 
@@ -81,9 +81,11 @@ function reset() {
 
 // subname code was added by me to enter the user name and then display at the end of the quiz. 
 function subname() {
-    myName = document.getElementById('myName').value;
-    if (myName) {
+    const enteredName = document.getElementById('myName').value.trim(); // Remove leading and trailing spaces
 
+    myName = document.getElementById('myName').value;
+    if (enteredName) {
+        myName = enteredName
         letsGo.classList.remove('hide');
         submit.classList.add('hide'); // code added to remove submit button once name has been entered.
         ruleText.classList.add('hide'); // code added to remove OOPS message when submit is entered.
@@ -93,7 +95,7 @@ function subname() {
         document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
 
-    ;
+    
 }
 
 
@@ -180,6 +182,7 @@ function defaultState() { // code form Web Dev Simplified on youtube, link in RE
 function checkAnswer(event) { // code form Web Dev Simplified on youtube, link in README
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
+    
     if (correct) score++; // code added by me to increment score and display at end of quiz.
 
     setStatusClass(document.body, correct);
