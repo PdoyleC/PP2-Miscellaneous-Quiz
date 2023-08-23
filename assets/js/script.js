@@ -183,7 +183,7 @@ function checkAnswer(event) {
         if (correct) score++; // code added by me to increment score and display at end of quiz.
 
         clearInterval(time); // Stop the timer
-        questionAnswered = true; // Set questionAnswered to true
+        questionAnswered = true;
 
         setStatusClass(document.body, correct);
         Array.from(answersArea.children).forEach((button) => {
