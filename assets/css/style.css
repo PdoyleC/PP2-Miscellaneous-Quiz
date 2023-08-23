@@ -259,10 +259,9 @@ button:hover {
 /*navigation buttons*/
 
 #start-btn,
-#next-btn,
-{
-width: 30%;
-margin: 10px 0;
+#next-btn {
+    width: 30%;
+    margin: 10px 0;
 }
 
 .navigationrestart {

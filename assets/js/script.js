@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('questions-area').innerText = 'Welcome to the Quiz Of Everything';
-    document.getElementById('questions-area1').innerText = 'Congratulations You have completed the Quiz';
-    document.getElementById('questions-area2').innerText = 'Congratulations you have completed the Quiz Click restart to retry';
 });
 
 
@@ -28,21 +26,17 @@ let finishText = document.getElementById('finish-text-score');
 let ruleText = document.getElementById('rule-text-score');
 let shuffledQuestions; //hold the questions that are random
 let currentQuestionIndex; //index for the current question
+let questionAnswered = false;
 let score = 0;
 var sec = 18000; //this gives time to start the quiz
 var clicks = 0;
 var time = setInterval(myTimer, 1000);
-
-
-
-
 
 //event listeners for Start, Rules, Next and submit buttons
 submit.addEventListener('click', subname);
 letsGo.addEventListener('click', runGame);
 quizRules.addEventListener('click', showrules);
 nextBut.addEventListener('click', nextquestcurrquest);
-
 
 //showrules code was added by me
 function showrules() {
@@ -55,15 +49,14 @@ function showrules() {
     closeBtn.addEventListener('click', reset);
 }
 
-
 //timer code was added by me to set a time for each question.
 
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec < -1) { // minus 1 added by me and is used for the seconds to get to zero.
+    if (sec < -1) {   // minus 1 added by me and is used for the seconds to get to zero.
         clearInterval(time);
-        alert("You are out of Time, The Quiz is over!! :(");
+        alert('You are out of Time, The Quiz is over!! :(');
         timeoutendGame();
     }
 }
@@ -80,7 +73,7 @@ function reset() {
     infoFront.classList.remove('hide');
 }
 
-// subname code was added by me to enter the user name and then display at the end of the quiz. 
+// subname code was added by me to enter the user name and then display at the end of the quiz.
 function subname() {
     const enteredName = document.getElementById('myName').value.trim(); // Remove leading and trailing spaces
 
@@ -96,25 +89,29 @@ function subname() {
         ruleText.classList.remove('hide');
         document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter your name and then press submit.`; // code added by me to ask for username
     }
-
-
 }
-
-
 
 // nextquestcurrquest code is there to increment the current question of the progress counter.
 
-function nextquestcurrquest() {  // code form Web Dev Simplified on youtube, link in README
-    sec = 25; //code was added by me so there is 25 sec per question.
+function nextquestcurrquest() {
+    // code form Web Dev Simplified on youtube, link in README
+    // sec = 25; //code was added by me so there is 25 sec per question.
+    // currentQuestionIndex++;
+    // getNextQuestion();
+    // clicks += 1;    //code was added by me to increment number of question completed
+    // document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
+
+    if (questionAnswered) {
+        questionAnswered = false; // Reset the questionAnswered flag
+        sec = 25; // Reset the timer value
+        time = setInterval(myTimer, 1000); // Start the timer again
+    }
+
     currentQuestionIndex++;
     getNextQuestion();
-    clicks += 1;    //code was added by me to increment number of question completed
-    document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
-
+    clicks += 1;
+    document.getElementById('clicks').innerHTML = clicks;
 }
-
-
-
 
 //Quiz game
 
@@ -132,14 +129,14 @@ function runGame() { // code form Web Dev Simplified on youtube, link in README
     submit.classList.add('hide'); //code was added by me to hide rules and text
     myLabel.classList.add('hide'); //code was added by me to hide rules and text
     infoFront.classList.add('hide'); //code was added by me to hide rules and text
-    timershow.classList.remove('hide');//code was added by me to show timer .
-    scoresshow.classList.remove('hide');//code was added by me to show score.
+    timershow.classList.remove('hide'); //code was added by me to show timer .
+    scoresshow.classList.remove('hide'); //code was added by me to show score.
     scoresinshow.classList.remove('hide'); //code was added by me to show score.
     clicksshow.classList.remove('hide'); //code was added by me to show progress
-    shuffledQuestions = questions.sort(() => .5 - Math.random()).slice(0, 10);
+    shuffledQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
     currentQuestionIndex = 0;
-    clicks += 1;    //code was added by me to increment number of question completed
-    document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
+    clicks += 1; //code was added by me to increment number of question completed
+    document.getElementById('clicks').innerHTML = clicks; //code was added by me to increment number of question completed
     questionCont.classList.remove('hide');
     getNextQuestion();
 }
@@ -147,7 +144,7 @@ function runGame() { // code form Web Dev Simplified on youtube, link in README
 /**
  * resets and shuffles questions
  */
-function getNextQuestion() { // code form Web Dev Simplified on youtube, link in README
+function getNextQuestion() {  // code form Web Dev Simplified on youtube, link in README
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
@@ -156,7 +153,7 @@ function getNextQuestion() { // code form Web Dev Simplified on youtube, link in
 
 function displayQuestion(question) { // code form Web Dev Simplified on youtube, link in README
     questionArea.innerText = question.question;
-    question.answers.forEach(answer => {
+    question.answers.forEach((answer) => {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
@@ -170,7 +167,7 @@ function displayQuestion(question) { // code form Web Dev Simplified on youtube,
 
 //takes out the old answers so new ones can go in
 
-function defaultState() { // code form Web Dev Simplified on youtube, link in README
+function defaultState() {  // code form Web Dev Simplified on youtube, link in README
     nextBut.classList.add('hide');
     while (answersArea.firstChild) {
         answersArea.removeChild(answersArea.firstChild);
@@ -181,7 +178,8 @@ function defaultState() { // code form Web Dev Simplified on youtube, link in RE
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
  */
-function checkAnswer(event) { // code form Web Dev Simplified on youtube, link in README
+function checkAnswer(event) {
+    // code form Web Dev Simplified on youtube, link in README
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
 
@@ -190,8 +188,11 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
 
         if (correct) score++; // code added by me to increment score and display at end of quiz.
 
+        clearInterval(time); // Stop the timer
+        questionAnswered = true; // Set questionAnswered to true
+
         setStatusClass(document.body, correct);
-        Array.from(answersArea.children).forEach(button => {
+        Array.from(answersArea.children).forEach((button) => {
             setStatusClass(button, button.dataset.correct);
             button.removeEventListener('click', checkAnswer); // Remove the event listener to prevent further clicks
         });
@@ -202,7 +203,8 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
             timershow.classList.add('hide'); // code added by me to to hide the timer
             setTimeout(endscore, 5000); // code added by me to for the user to check there final answer.
 
-            function endscore() {  // This nested function code added by me to give the user a chance to see the answer of the last question. 
+            function endscore() {
+                // This nested function code added by me to give the user a chance to see the answer of the last question.
                 scoresinshow.classList.add('hide');
                 scoresshow.classList.add('hide');
                 answersArea.classList.add('hide');
@@ -212,18 +214,23 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
                 finishText.classList.remove('hide');
                 restartBut.classList.add('hide');
 
-
-                if (score >= 8) {   // if else code added by me to display a comment, name and score at end of quiz.
-                    document.getElementById('finish-text-score').innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                if (score >= 8) {
+                    // if else code added by me to display a comment, name and score at end of quiz.
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Your General knowledge is Fantastic ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
                 } else if (score >= 6 && score < 8) {
-
-                    document.getElementById('finish-text-score').innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
                 } else if (score >= 4 && score < 6) {
-
-                    document.getElementById('finish-text-score').innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for taking the Quiz.`;
                 } else {
-
-                    document.getElementById('finish-text-score').innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `They just didn't suit you ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for taking the Quiz,`;
                 }
                 setTimeout(endGameover, 10000);
             }
@@ -237,8 +244,8 @@ function checkAnswer(event) { // code form Web Dev Simplified on youtube, link i
     }
 }
 
-
-function setStatusClass(element, correct) {    // code form Web Dev Simplified on youtube, link in README
+function setStatusClass(element, correct) {
+    // code form Web Dev Simplified on youtube, link in README
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -247,7 +254,8 @@ function setStatusClass(element, correct) {    // code form Web Dev Simplified o
     }
 }
 
-function clearStatusClass(element) { // code form Web Dev Simplified on youtube, link in README
+function clearStatusClass(element) {
+    // code form Web Dev Simplified on youtube, link in README
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
@@ -258,16 +266,16 @@ function clearStatusClass(element) { // code form Web Dev Simplified on youtube,
  */
 
 function incrementCorrectScore() {
-    let oldScore = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = oldScore + 1;   //* ++oldscore can also be used here, changed from CI;
+    let oldScore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = oldScore + 1; //* ++oldscore can also be used here, changed from CI;
 }
 
 function incrementWrongAnswer() {
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = oldScore + 1;
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = oldScore + 1;
 }
 
-// timeoutendGame code was added by me for when the quiz timer is up the quiz ends, it jumps to here. 
+// timeoutendGame code was added by me for when the quiz timer is up the quiz ends, it jumps to here.
 function timeoutendGame() {
     document.getElementById('questions-area').innerHTML = `
             <strong><em>Unfortunately the timer ended the Quiz!</em></strong>
@@ -283,16 +291,15 @@ function timeoutendGame() {
     infoFront.classList.add('hide');
     form.classList.add('hide');
     finishText.classList.add('hide');
-    setTimeout(restart, 5000);//* setTimeout(myFunction, 5 seconds);
+    setTimeout(restart, 5000); //* setTimeout(myFunction, 5 seconds);
 }
-
 
 //restart code was added by me for completeing the quiz
 function restart() {
-    return window.location.assign("toquizover.html");
+    return window.location.assign('toquizover.html');
 }
 
 //endGameover code was added by me for the quiz timing out
 function endGameover() {
-    return window.location.assign("quizover.html");
+    return window.location.assign('quizover.html');
 }
