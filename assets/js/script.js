@@ -103,8 +103,8 @@ function nextquestcurrquest() {
 
     currentQuestionIndex++;
     getNextQuestion();
-    clicks += 1;
-    document.getElementById('clicks').innerHTML = clicks;
+    clicks += 1;  //code was added by me to increment number of question completed
+    document.getElementById('clicks').innerHTML = clicks; //code was added by me to increment number of question completed
 }
 
 //Quiz game

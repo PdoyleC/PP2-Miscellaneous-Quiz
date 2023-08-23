@@ -227,6 +227,15 @@
 - Code inspired from CI student Lisa Tinmurth [Link to mrst12 github](https://mrst12.github.io/Quizzical/).
 - Favicon code was found at the following site [Link to Favicon site](https://favicon.io/).
 - Code for timer to end quiz [Link to Stack Over Flow site](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz). The code was improved by changing that measurement of the countdown.
+- How to pause the timer code was researched from the following.
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/23262434/javascript-countdown-timer-pause-resume).
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/11563382/javascript-timer-pause?rq=3).
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/20851709/how-to-pause-stop-a-timer).
+  - [Link w3schools](https://www.w3schools.com/js/tryit.asp?filename=tryjs_setinterval3).
+- code was researched from the following to stop additional answers being clicked multiple times to artificially increment the correct/incorrect score.
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/72856560/how-to-detect-classname-with-onclick-event).
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/2788191/how-to-check-whether-a-button-is-clicked-by-using-javascript).
+  - [Link Stack Over Flow site](https://stackoverflow.com/questions/1553661/how-to-get-the-onclick-calling-object).
 
 ### Media
 
