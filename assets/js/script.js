@@ -94,12 +94,6 @@ function subname() {
 // nextquestcurrquest code is there to increment the current question of the progress counter.
 
 function nextquestcurrquest() {
-    // code form Web Dev Simplified on youtube, link in README
-    // sec = 25; //code was added by me so there is 25 sec per question.
-    // currentQuestionIndex++;
-    // getNextQuestion();
-    // clicks += 1;    //code was added by me to increment number of question completed
-    // document.getElementById("clicks").innerHTML = clicks; //code was added by me to increment number of question completed
 
     if (questionAnswered) {
         questionAnswered = false; // Reset the questionAnswered flag
