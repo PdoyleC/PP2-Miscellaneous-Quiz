@@ -164,6 +164,8 @@
 
 ### Inspect and Testing
 
+- Spaces were put into the username and submit was entered, an error appears asking to input a username.
+- Once the quiz is running, the answers were clicked multiple times and the score didn't artificially increment.
 - I used Inspect to make changes to the code and to test layout and positioning. Inspect was used to test the different media screen sizes.
 - The image below shows the site being tested using Chrome,Edge/FireFox, iPad and iPhone4
 

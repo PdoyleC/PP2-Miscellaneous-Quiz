@@ -295,9 +295,4 @@ function restart() {
 //endGameover code was added by me for the quiz timing out
 function endGameover() {
     return window.location.assign('quizover.html');
-}
-
-
-
-
 
