@@ -297,3 +297,8 @@ function restart() {
 function endGameover() {
     return window.location.assign('quizover.html');
 }
+
+
+
+
+
