@@ -56,7 +56,6 @@ function myTimer() {
     sec--;
     if (sec < -1) {   // minus 1 added by me and is used for the seconds to get to zero.
         clearInterval(time);
-        alert('You are out of Time, The Quiz is over!! :(');
         timeoutendGame();
     }
 }

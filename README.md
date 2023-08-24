@@ -133,7 +133,7 @@
 
 ## Unfixed Bugs
 
-- No unfixed bugs.
+- The timer alert was causing a console error when the quiz timed out, after commentating out the timer code, it was seen that it was the timer. The issue was only seen on Chrome and wasn't happening on FireFow or Edge. The code was removed to stop the error from happening in chrome [stackoverflow](https://stackoverflow.com/questions/42218699/chrome-violation-violation-handler-took-83ms-of-runtime).
 
 ## Testing and Validation
 
